@@ -1,4 +1,4 @@
-@media all and (max-width:767px) {
+@media all and (max-width:575px) {
     .navigation {
         max-width: 570px;
         font-size: 14px !important;
@@ -16,6 +16,66 @@
         line-height: 42px;
     }
     /* End of Navigation */
+    .this-is-me,
+    .about-me {
+        max-width: 570px;
+    }
+    .this-is-me-1 {
+        margin-top: 100px;
+    }
+    .this-is-me-2 {
+        width: 70%;
+    }
+    .img1,
+    .img2 {
+        max-width: 100%;
+    }
+    .about-me-p {
+        max-width: 445px;
+    }
+    .this-is-me-h1 {
+        font-size: 30px;
+        color: #222;
+    }
+}
+@media all and (min-width:576px) and (max-width:767px) {
+    .navigation {
+        max-width: 570px;
+        font-size: 14px !important;
+    }
+    .nav-link,
+    .nav-link:hover,
+    .nav-link:focus
+     {
+        color: white;
+    }
+    .nav-item {
+        height: 42px;
+    }
+    .nav-link {
+        line-height: 42px;
+    }
+    /* End of Navigation */
+    .this-is-me,
+    .about-me {
+        max-width: 570px;
+    }
+    
+    .this-is-me-1 {
+        margin-top: 100px;
+    }
+    
+    .img1 {
+        width: 348px;
+    }
+    .img2 {
+        width: 510px;
+    }
+    .this-is-me-h1 {
+        font-size: 30px;
+        color: #222;
+    }
+
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
@@ -36,9 +96,22 @@
         line-height: 42px;
     }
         /* End of Navigation */
+        .this-is-me,
+        .about-me {
+            max-width: 750px;
+        }
+        .img1,
+        .img2 {
+            width: 330px;
+        }
+        .this-is-me-h1 {
+            font-size: 30px;
+            color: #222;
+        }
 
    
 }
+
 
 @media all and (min-width:992px) and (max-width:1199px) {
     .navigation {
@@ -59,6 +132,18 @@
         display: block !important;
     }
         /* End of Navigation */
+        .this-is-me,
+        .about-me {
+            max-width: 960px;
+        }
+        .img1,
+        .img2 {
+            width: 450px;
+        }
+        .this-is-me-h1 {
+            font-size: 60px;
+            color: #222;
+        }
     
 }
 
@@ -81,6 +166,20 @@
         display: block !important;
     }
         /* End of Navigation */
+        .this-is-me,
+        .about-me {
+            max-width: 1140px;
+        }
+        .img1 {
+            width: 483px;
+        }
+        .img2 {
+            width: 540px;
+        }
+        .this-is-me-h1 {
+            font-size: 60px;
+            color: #222;
+        }
 
    
 }
@@ -113,7 +212,7 @@
 .submenu-2  {
     width: 200px;
     margin-left: -216px;
-    margin-top: -50px;
+    margin-top: -40px;
     box-shadow: 1px 1px 40px rgba(132, 144, 255, 0.15), -1px -1px 40px rgba(132, 144, 255, 0.15) ;
 
 }
@@ -145,4 +244,20 @@
 .this-is-me {
     height: 750px;
     background-color: #f9f9ff;
+}
+.about-me {
+    padding-top: 120px;
+}
+
+.discover-btn {
+    line-height: 42px;
+    background-image: linear-gradient(to right, #8490ff, #62dbfc);
+    font-size: 14px;
+}
+.this-is-me-h6 {
+    font-size: 14px;
+    color: #444;
+}
+.this-is-me-p {
+    color: #777;
 }
