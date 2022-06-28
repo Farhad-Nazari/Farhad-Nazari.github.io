@@ -270,11 +270,24 @@
 .offered-services {
     padding: 120px 0;
 }
-.offered-services-p {
-    font-size: 14px;
+.offered-services p {
+    font-size: 16px;
     color: #777;
+    max-width: 570px;
+    margin: 0 auto;
+}
+.offered-services h4 {
+    font-size: 18px;
+    color: #222;
+}
+.offered-services span {
+    color: #222;
+}
+.offered-services-boxes:hover .offered-services-boxes>a>h4 {
+    color: #8490ff;
 }
 
 .counters {
     padding: 120px 0;
+    background-image: linear-gradient(to right, #8490ff, #62dbfc);
 }
