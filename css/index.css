@@ -17,7 +17,8 @@
     }
     /* End of Navigation */
     .this-is-me,
-    .about-me {
+    .about-me,
+    .offered-services {
         max-width: 570px;
     }
     .this-is-me-1 {
@@ -57,7 +58,8 @@
     }
     /* End of Navigation */
     .this-is-me,
-    .about-me {
+    .about-me,
+    .offered-services {
         max-width: 570px;
     }
     
@@ -97,7 +99,8 @@
     }
         /* End of Navigation */
         .this-is-me,
-        .about-me {
+        .about-me,
+        .offered-services {
             max-width: 750px;
         }
         .img1,
@@ -133,7 +136,8 @@
     }
         /* End of Navigation */
         .this-is-me,
-        .about-me {
+        .about-me,
+        .offered-services {
             max-width: 960px;
         }
         .img1,
@@ -141,7 +145,7 @@
             width: 450px;
         }
         .this-is-me-h1 {
-            font-size: 60px;
+            font-size: 56px;
             color: #222;
         }
     
@@ -167,7 +171,8 @@
     }
         /* End of Navigation */
         .this-is-me,
-        .about-me {
+        .about-me,
+        .offered-services {
             max-width: 1140px;
         }
         .img1 {
@@ -260,4 +265,16 @@
 }
 .this-is-me-p {
     color: #777;
+}
+
+.offered-services {
+    padding: 120px 0;
+}
+.offered-services-p {
+    font-size: 14px;
+    color: #777;
+}
+
+.counters {
+    padding: 120px 0;
 }
