@@ -245,10 +245,11 @@
     line-height: 25px;
 }
                                                     /* End of Navigation */
-
+.this-is-me-main {
+    background-color: #f9f9ff;
+}
 .this-is-me {
     height: 750px;
-    background-color: #f9f9ff;
 }
 .about-me {
     padding-top: 120px;
