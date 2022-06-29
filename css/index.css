@@ -44,7 +44,7 @@
 }
 @media all and (min-width:576px) and (max-width:767px) {
     .navigation {
-        max-width: 600px;
+        max-width: 570px;
         font-size: 14px !important;
     }
     .nav-link,
@@ -66,7 +66,7 @@
     .latest-project,
     .counters,
     .latest-project-3 {
-        max-width: 600px;
+        max-width: 570px;
     }
     
     .this-is-me-1 {
@@ -88,7 +88,7 @@
 
 @media all and (min-width:768px) and (max-width:991px) {
     .navigation {
-        max-width: 780px;
+        max-width: 750px;
         font-size: 14px !important;
     }
     .nav-link,
@@ -110,7 +110,7 @@
         .latest-project,
         .counters,
         .latest-project-3 {
-            max-width: 780px;
+            max-width: 750px;
         }
         .img1,
         .img2 {
@@ -127,7 +127,7 @@
 
 @media all and (min-width:992px) and (max-width:1199px) {
     .navigation {
-        max-width: 990px;
+        max-width: 960px;
     }
     .nav-link {
         font-weight: bold;
@@ -150,7 +150,7 @@
         .latest-project,
         .counters,
         .latest-project-3 {
-            max-width: 990px;
+            max-width: 960px;
         }
         .img1,
         .img2 {
@@ -165,7 +165,7 @@
 
 @media all and (min-width:1200px) {
     .navigation {
-        max-width: 1170px;
+        max-width: 1140px;
     }
     .nav-link {
         font-weight: bold;
@@ -188,7 +188,7 @@
         .latest-project,
         .counters,
         .latest-project-3 {
-            max-width: 1170px;
+            max-width: 1140px;
         }
         .img1 {
             width: 483px;
