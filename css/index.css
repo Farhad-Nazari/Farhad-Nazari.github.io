@@ -21,7 +21,8 @@
     .offered-services,
     .latest-project,
     .counters,
-    .latest-project-3 {
+    .latest-project-3,
+    .feedback-1 {
         max-width: 570px;
     }
     .this-is-me-1 {
@@ -65,7 +66,8 @@
     .offered-services,
     .latest-project,
     .counters,
-    .latest-project-3 {
+    .latest-project-3,
+    .feedback-1 {
         max-width: 570px;
     }
     
@@ -109,7 +111,8 @@
         .offered-services,
         .latest-project,
         .counters,
-        .latest-project-3 {
+        .latest-project-3,
+        .feedback-1 {
             max-width: 750px;
         }
         .img1,
@@ -149,7 +152,8 @@
         .offered-services,
         .latest-project,
         .counters,
-        .latest-project-3 {
+        .latest-project-3,
+        .feedback-1 {
             max-width: 960px;
         }
         .img1,
@@ -187,7 +191,8 @@
         .offered-services,
         .latest-project,
         .counters,
-        .latest-project-3 {
+        .latest-project-3,
+        .feedback-1 {
             max-width: 1140px;
         }
         .img1 {
@@ -221,7 +226,8 @@
     right: 15px;
 }
 
-.active {
+.navigation .active,
+.latest-project-2 .active {
     color: #8490ff !important;
 }
 .submenu-1 {
@@ -283,7 +289,8 @@
     color: #777;
 }
 
-.offered-services {
+.offered-services,
+.feedback {
     padding: 120px 0;
 }
 .offered-services p {
@@ -292,7 +299,8 @@
     max-width: 570px;
     margin: 0 auto;
 }
-.offered-services h4 {
+.offered-services h4,
+.latest-project-3 h4 {
     font-size: 18px;
     color: #222;
 }
@@ -313,4 +321,17 @@
 .latest-project-2 li{
     list-style-type: none;
     font-size: 12px;
+}
+.latest-project-3 p {
+    font-size: 14px;
+    color: #777;
+}
+.feedback-1-1 {
+    padding-bottom: 70px;
+}
+.feedback-2 img {
+    width: 30px;
+}
+.feedback {
+    background-color: #f9f9ff;
 }
