@@ -20,6 +20,7 @@
     .about-me,
     .offered-services,
     .latest-project,
+    .counters,
     .latest-project-3 {
         max-width: 570px;
     }
@@ -43,7 +44,7 @@
 }
 @media all and (min-width:576px) and (max-width:767px) {
     .navigation {
-        max-width: 570px;
+        max-width: 600px;
         font-size: 14px !important;
     }
     .nav-link,
@@ -63,8 +64,9 @@
     .about-me,
     .offered-services,
     .latest-project,
+    .counters,
     .latest-project-3 {
-        max-width: 570px;
+        max-width: 600px;
     }
     
     .this-is-me-1 {
@@ -86,7 +88,7 @@
 
 @media all and (min-width:768px) and (max-width:991px) {
     .navigation {
-        max-width: 750px;
+        max-width: 780px;
         font-size: 14px !important;
     }
     .nav-link,
@@ -106,8 +108,9 @@
         .about-me,
         .offered-services,
         .latest-project,
+        .counters,
         .latest-project-3 {
-            max-width: 750px;
+            max-width: 780px;
         }
         .img1,
         .img2 {
@@ -124,7 +127,7 @@
 
 @media all and (min-width:992px) and (max-width:1199px) {
     .navigation {
-        max-width: 960px;
+        max-width: 990px;
     }
     .nav-link {
         font-weight: bold;
@@ -145,8 +148,9 @@
         .about-me,
         .offered-services,
         .latest-project,
+        .counters,
         .latest-project-3 {
-            max-width: 960px;
+            max-width: 990px;
         }
         .img1,
         .img2 {
@@ -161,7 +165,7 @@
 
 @media all and (min-width:1200px) {
     .navigation {
-        max-width: 1140px;
+        max-width: 1170px;
     }
     .nav-link {
         font-weight: bold;
@@ -182,8 +186,9 @@
         .about-me,
         .offered-services,
         .latest-project,
+        .counters,
         .latest-project-3 {
-            max-width: 1140px;
+            max-width: 1170px;
         }
         .img1 {
             width: 483px;
@@ -295,7 +300,7 @@
     color: #222;
 }
 
-.counters {
+.counters-main {
     padding: 120px 0;
     background-image: linear-gradient(to right, #8490ff, #62dbfc);
 }
