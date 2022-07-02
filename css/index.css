@@ -313,6 +313,9 @@ li {
     background-image: linear-gradient(to right, #8490ff, #62dbfc);
     font-size: 14px;
 }
+.discover-btn:hover {
+    box-shadow: 0px 2px 20px #8490ff;
+}
 .this-is-me-h6 {
     font-size: 14px;
     color: #444;
@@ -340,6 +343,12 @@ li {
 }
 .offered-services span {
     color: #222;
+}
+.offered-services-boxes:hover h4,
+.offered-services-boxes:hover i {
+    color: #8490ff;
+    transition: all 200ms linear;
+
 }
 
 .counters-main {
@@ -403,8 +412,8 @@ li {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background-color: rgba(132,144,255,.1);
-    border: 30px solid rgba(132,144,255,.1);
+    background-color: rgba(132,144,255,0.1);
+    border: 30px solid rgba(132,144,255,0.1);
     line-height: 80px;
 }
 .post {
@@ -421,9 +430,25 @@ li {
 .post-2-boxes:hover {
     cursor: pointer;
 }
+.post-2-boxes:hover h4 {
+    color: #8490ff;
+    transition: all 300ms linear;
+}
+.post-2-boxes:hover .post-img {
+    transform: scale(1.05);
+    transition: all 300ms linear;
+}
 .brands {
     padding: 80px 0;
     background-image: linear-gradient(to right, #8490ff, #62dbfc);
+}
+.brands-boxes img {
+    opacity: 0.5;
+    transition: all 250ms linear;
+}
+.brands-boxes:hover img {
+    opacity: 1;
+    cursor: pointer;
 }
 .footer {
     background-color: #04091e;
