@@ -22,7 +22,12 @@
     .latest-project,
     .counters,
     .latest-project-3,
-    .feedback-1 {
+    .feedback-1,
+    .plan,
+    .post-1,
+    .post-2,
+    .brands-1,
+    .footer-1 {
         max-width: 570px;
     }
     .this-is-me-1 {
@@ -67,7 +72,12 @@
     .latest-project,
     .counters,
     .latest-project-3,
-    .feedback-1 {
+    .feedback-1,
+    .plan,
+    .post-1,
+    .post-2,
+    .brands-1,
+    .footer-1 {
         max-width: 570px;
     }
     
@@ -112,7 +122,12 @@
         .latest-project,
         .counters,
         .latest-project-3,
-        .feedback-1 {
+        .feedback-1,
+        .plan,
+        .post-1,
+        .post-2,
+        .brands-1,
+        .footer-1 {
             max-width: 750px;
         }
         .img1,
@@ -123,8 +138,6 @@
             font-size: 30px;
             color: #222;
         }
-
-   
 }
 
 
@@ -139,9 +152,11 @@
     }
     .nav-link:hover {
         color:#8490ff;
+        transition: all 350ms linear !important;
     }
     .nav-item:hover .submenu-1 {
         display: block !important;
+
     }
     .level-2:hover .submenu-2 {
         display: block !important;
@@ -153,7 +168,12 @@
         .latest-project,
         .counters,
         .latest-project-3,
-        .feedback-1 {
+        .feedback-1,
+        .plan,
+        .post-1,
+        .post-2,
+        .brands-1,
+        .footer-1 {
             max-width: 960px;
         }
         .img1,
@@ -178,12 +198,16 @@
     }
     .nav-link:hover {
         color:#8490ff ;
+        transition: all 350ms linear !important;
+
     }
     .nav-item:hover .submenu-1 {
         display: block !important;
+
     }
     .level-2:hover .submenu-2 {
         display: block !important;
+
     }
         /* End of Navigation */
         .this-is-me,
@@ -192,7 +216,12 @@
         .latest-project,
         .counters,
         .latest-project-3,
-        .feedback-1 {
+        .feedback-1,
+        .plan,
+        .post-1,
+        .post-2,
+        .brands-1,
+        .footer-1 {
             max-width: 1140px;
         }
         .img1 {
@@ -204,6 +233,9 @@
         .this-is-me-h1 {
             font-size: 60px;
             color: #222;
+        }
+        .brands-boxes {
+            width: 20%;
         }
 
    
@@ -242,7 +274,7 @@
     box-shadow: 1px 1px 40px rgba(132, 144, 255, 0.15), -1px -1px 40px rgba(132, 144, 255, 0.15) ;
 
 }
-.submenu-1 li {
+li {
     list-style-type: none;
 }
 .submenu-1 a {
@@ -256,9 +288,7 @@
 .nav-link {
     height: 100%;
 }
-.submenu-li {
-    list-style-type: none;
-}
+
 .lh-i {
     line-height: 45px;
 }
@@ -290,7 +320,9 @@
 }
 
 .offered-services,
-.feedback {
+.feedback,
+.post,
+.plans {
     padding: 120px 0;
 }
 .offered-services p {
@@ -312,26 +344,89 @@
     padding: 120px 0;
     background-image: linear-gradient(to right, #8490ff, #62dbfc);
 }
-.latest-project {
+.latest-project,
+.footer {
     padding: 120px 0;
 }
 .latest-project-1 {
     margin-bottom: 70px;
 }
 .latest-project-2 li{
-    list-style-type: none;
     font-size: 12px;
 }
 .latest-project-3 p {
     font-size: 14px;
     color: #777;
 }
-.feedback-1-1 {
+.feedback-1-1,
+.plan-1 {
     padding-bottom: 70px;
 }
-.feedback-2 img {
+.feedback-2 img,
+.post-2-img {
     width: 30px;
 }
 .feedback {
     background-color: #f9f9ff;
+}
+.plan-2 {
+    background-color: #f9f9ff;
+    transition: all 300ms linear;
+}
+.plan-2 li {
+    list-style: none;
+    font-size: 13.5px;
+}
+.buy-now {
+    display: none;
+    font-size: 14px;
+    line-height: 35px;
+}
+.plan-2:hover {
+    background-image: linear-gradient(to right, #8490ff, #62dbfc);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.plan-2:hover .buy-now {
+    display: block;
+}
+.plan-2:hover h1 {
+    background-color: transparent;
+    border: 30px solid #81b0fe;
+}
+.plan-2:hover .cost {
+    display: none;
+}
+.plan-numbers {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgba(132,144,255,.1);
+    border: 30px solid rgba(132,144,255,.1);
+    line-height: 80px;
+}
+.post {
+    background-color: #f9f9ff;
+}
+.brands {
+    padding: 80px 0;
+    background-image: linear-gradient(to right, #8490ff, #62dbfc);
+}
+.footer {
+    background-color: #04091e;
+}
+
+.footer h4 {
+    font-size: 18px;
+}
+.footer p {
+    font-size: 14px;
+    color: #777;
+}
+.footer input {
+    width: 88%;
+}
+.footer button {
+    width: 12%;
 }
