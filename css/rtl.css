@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSans/IRANSans.woff2') format('woff2'),
+        url('../fonts/IRANSans/IRANSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gohar';
+    src: url('../fonts/gohar/Gohar-Bold.woff2') format('woff2'),
+        url('../fonts/gohar/Gohar-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    font-family: "IRANSans";
+}
+h1 , h4 {
+    font-family: "Gohar";
+}
 @media all and (max-width:575px) {
     .navigation {
         max-width: 570px;
@@ -257,7 +279,7 @@
 .navbar-toggler {
     box-shadow: none !important;
     position: fixed;
-    right: 15px;
+    left: 15px;
 }
 
 .navigation .active,
