@@ -288,12 +288,12 @@ h1 , h4 {
 }
 .submenu-1 {
     width: 200px;
-    margin-left: -120px;
+    margin-right: -120px;
     box-shadow: 1px 1px 40px rgba(132, 144, 255, 0.15), -1px -1px 40px rgba(132, 144, 255, 0.15);
 }
 .submenu-2  {
     width: 200px;
-    margin-left: -216px;
+    margin-right: -200px;
     margin-top: -40px;
     box-shadow: 1px 1px 40px rgba(132, 144, 255, 0.15), -1px -1px 40px rgba(132, 144, 255, 0.15) ;
 
