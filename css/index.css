@@ -185,7 +185,6 @@
     font-size: 14px;
   }
   .row3 img {
-    aspect-ratio: 1;
     object-fit: cover;
   }
   .row3-1-2 {
@@ -400,7 +399,6 @@
     font-size: 15px;
   }
   .row3 img {
-    aspect-ratio: 1;
     object-fit: cover;
   }
   .row3-1-2 {
@@ -618,7 +616,6 @@
     padding: 40px 50px;
   }
   .row3 img {
-    aspect-ratio: 1;
     object-fit: cover;
   }
   .row6-2description {
