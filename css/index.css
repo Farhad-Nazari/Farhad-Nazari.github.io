@@ -194,6 +194,18 @@
   .row5-col4 {
     height: 280px;
   }
+  .row6-2description {
+    height: 280px;
+  }
+  .row6-2description h3 {
+    font-size: calc(12px + 0.5vw);
+  }
+  .row6-2description p {
+    font-size: calc(10px + 0.5vw);
+  }
+  .row6-2description span {
+    font-size: calc(10px + 0.5vw);
+  }
   .footer-1::after {
     display: block;
     content: "";
@@ -395,7 +407,19 @@
     padding: 40px 50px;
   }
   .row5-col4 {
-    height: 280px;
+    height: 260px;
+  }
+  .row6-2description {
+    height: 200px;
+  }
+  .row6-2description h3 {
+    font-size: calc(16px + 0.8vw);
+  }
+  .row6-2description p {
+    font-size: calc(9px + 0.8vw);
+  }
+  .row6-2description span {
+    font-size: calc(7px + 0.8vw);
   }
   .footer-1::after {
     display: block;
@@ -596,6 +620,18 @@
   .row3 img {
     aspect-ratio: 1;
     object-fit: cover;
+  }
+  .row6-2description {
+    height: 260px;
+  }
+  .row6-2description h3 {
+    font-size: 21px;
+  }
+  .row6-2description p {
+    font-size: 15px;
+  }
+  .row6-2description span {
+    font-size: 13px;
   }
   .footer-1 {
     border-bottom: 2px solid #aaa;
@@ -837,9 +873,25 @@
   .row3-1-2 {
     padding: 70px 50px;
   }
+  .row6-2description {
+    height: 330px;
+  }
+  .row6-2description h3 {
+    font-size: 23px;
+  }
+  .row6-2description p {
+    font-size: 16px;
+  }
+  .row6-2description span {
+    font-size: 14px;
+  }
   .footer-1 {
     border-bottom: 2px solid #aaa;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .cookies-container {
@@ -1179,9 +1231,9 @@ video {
   background-position: 0%;
 }
 
-.row6 > div {
+.row6 {
+  width: calc(100vw - 32px);
   max-width: 1170px;
-  margin: 0px auto;
 }
 
 .row6-2 {
@@ -1193,12 +1245,7 @@ video {
   object-fit: cover;
 }
 
-.row6-2 div {
-  min-height: 50px;
-}
-
 .row6-2description {
-  height: 268px;
   border: 1px solid #00472f;
   background-color: #fff;
   padding: 30px;
@@ -1209,7 +1256,6 @@ video {
 }
 
 .row6-2description h3 {
-  font-size: 18px;
   font-weight: normal;
   color: #1d4934;
   letter-spacing: 0.2rem;
@@ -1217,14 +1263,12 @@ video {
 }
 
 .row6-2description p {
-  font-size: 14px;
   color: #000;
   letter-spacing: 2px;
 }
 
 .row6-2description span {
   color: #638b18;
-  font-size: 12px;
   font-weight: bolder;
   letter-spacing: 2px;
 }
@@ -1236,24 +1280,17 @@ video {
   font-weight: normal;
 }
 
-.row6-1 i {
+.active {
+  color: #fff;
   cursor: pointer;
 }
 
-.icon-active {
-  color: #fff;
-}
-
-.icon-notActive {
+.notActive {
   color: #aaa;
 }
 
-.img-hidden {
-  transform: scaleX(0);
-}
-
-.img-visible {
-  transform: scaleX(1);
+.slider2-container {
+  transition: all 350ms linear;
 }
 
 .fixed-element {

@@ -92,27 +92,111 @@ const images=["images/3.webp", "images/4.webp","images/5.webp","images/6.webp","
 const previous = document.querySelector(".slider1-previous");
 const next = document.querySelector(".slider1-next");
 const slider = document.querySelectorAll(".slider1");
-let activeIndex = 0;
+let counter = 0;
 
-
+function reset() {
+    slider[0].setAttribute("src",images[9]);
+    slider[1].setAttribute("src",images[0]);
+}
+function slide() {
+    slider[0].setAttribute("src",images[counter]);
+    slider[1].setAttribute("src",images[counter+1]);
+}
 
 next.addEventListener("click",function() {
-    activeIndex++;
-    if (activeIndex == 8) {
-        activeIndex = 0;
+    counter++;
+    if (counter == 9) {
+       reset();
+    }
+    else if(counter==10){
+          counter = 0;
+          slide();
       }
-    console.log(slider[0]);
-    console.log(slider[1]);
-    slider[0].setAttribute("src", images[activeIndex]);
-    slider[1].setAttribute("src", images[activeIndex+1]);
+      else {
+        slide();
+      }
 });
 previous.addEventListener("click",function() {
-    activeIndex--;
-    if (activeIndex == -1) {
-        activeIndex = 8;
+    counter--;
+    if (counter == -1) {
+      reset();
+    }
+    else if(counter==-2){
+          counter = 8;
+        slide();
       }
-    console.log(slider[0]);
-    console.log(slider[1]);
-    slider[0].setAttribute("src", images[activeIndex]);
-    slider[1].setAttribute("src", images[activeIndex+1]);
+      else {
+        slide();
+      }
 });
+
+/*slider2*/
+const next2 = document.querySelector(".slider2-next");
+const previous2 = document.querySelector(".slider2-previous");
+const slide2 = document.querySelector(".slider2-container");
+const row6Img = document.querySelector(".row6-img");
+let counter2 = 0;
+let widthOfTranslate;
+
+function slideActive(x) {
+  x.classList.remove ("notActive");
+  x.classList.add ("active");
+  slide2.style.transform = `translateX(-${widthOfTranslate*counter2}px)`; 
+}
+function slideNonActive(x) {
+  x.classList.remove ("active");
+  x.classList.add ("notActive");
+  slide2.style.transform = `translateX(-${widthOfTranslate*counter2}px)`; 
+}
+function slider2Next(x) {
+  widthOfTranslate= row6Img.width;
+  counter2++;
+  if (counter2<x && counter2>0) {
+    slideActive(previous2);
+  }
+  else if (counter2==x) {
+    slideNonActive(next2);
+  }
+  else {
+    counter2=x;
+  }
+}
+function slider2Previous(x) {
+  widthOfTranslate= row6Img.width;
+  counter2--;
+  if(counter2<x && counter2>0) {
+    slideActive(next2);
+  }
+  else if (counter2==0) {
+    slideNonActive(previous2);
+  }
+  else {
+  counter2=0;
+  }
+}
+next2.addEventListener("click",function(){
+  let screen = window.innerWidth;
+  if (screen<=767){
+    slider2Next(5);
+  }
+  else if (screen>=768 && screen<=991) {
+    slider2Next(4);
+  }
+  else if (screen>=992) {
+    slider2Next(3);
+  }
+});
+previous2.addEventListener("click",function(){
+  let screen = window.innerWidth;
+  if (screen<=767){
+    slider2Previous(5);
+  }
+  else if (screen>=768 && screen<=991) {
+    slider2Previous(4);
+  }
+  else if (screen>=992) {
+    slider2Previous(3);
+  }
+});
+
+/*End*/

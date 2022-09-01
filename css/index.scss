@@ -222,6 +222,19 @@
         height: 280px;
       }
 
+      .row6-2description {
+        height: 280px;
+        h3 {
+            font-size: calc(12px + 0.5vw);
+        }
+        p {
+            font-size: calc(10px + 0.5vw);
+        }
+        span {
+            font-size: calc(10px + 0.5vw);
+        }
+      }
+
       .footer-1::after {
         display: block;
         content: "";
@@ -429,7 +442,20 @@
       }
 
       .row5-col4 {
-        height: 280px;
+        height: 260px;
+      }
+
+      .row6-2description {
+        height: 200px;
+        h3 {
+            font-size: calc(16px + 0.8vw);
+        }
+        p {
+            font-size: calc(9px + 0.8vw);
+        }
+        span {
+            font-size: calc(7px + 0.8vw);
+        }
       }
 
       .footer-1::after {
@@ -634,7 +660,18 @@
             aspect-ratio: 1;
             object-fit: cover;
         }
-
+        .row6-2description {
+            height: 260px;
+            h3 {
+                font-size: 21px;
+            }
+            p {
+                font-size: 15px;
+            }
+            span {
+                font-size: 13px;
+            }
+          }
       .footer-1 {
         border-bottom: 2px solid #aaa;
       }
@@ -891,11 +928,28 @@
         padding: 70px 50px;
       }
 
+      .row6-2description {
+        height: 330px;
+        h3 {
+            font-size: 23px;
+        }
+        p {
+            font-size: 16px;
+        }
+        span {
+            font-size: 14px;
+        }
+      }
+
       .footer-1 {
         border-bottom: 2px solid #aaa;
       }
-
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
 .cookies-container {
     position: fixed;
     top: 0;
@@ -1168,9 +1222,9 @@
     width: 140px;
   }
 
-  .row6>div {
+  .row6 {
+    width: calc(100vw - 32px);
     max-width: 1170px;
-    margin: 0px auto;
   }
 
   .row6-2 {
@@ -1179,12 +1233,8 @@
         height: 286px;
         object-fit: cover;
     }
-    div {
-        min-height: 50px;
-    }
   }
   .row6-2description {
-    height: 268px;
     border: 1px solid $color3;
     background-color: #fff;
     padding: 30px;
@@ -1192,20 +1242,17 @@
         text-decoration: none;
     }
     h3 {
-        font-size: 18px;
         font-weight: normal;
         color: $color1;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
     p {
-        font-size: 14px;
         color: #000;
         letter-spacing: 2px;
     }
     span {
         color: $color2;
-        font-size: 12px;
         font-weight: bolder;
         letter-spacing: 2px;
     }
@@ -1218,23 +1265,18 @@
         letter-spacing: 0.2rem;
         font-weight: normal;
     }
-    i {
-        cursor: pointer;
-    }
   }
 
-  .icon-active {
+  .active {
     color: #fff;
+    cursor: pointer;
   }
-  .icon-notActive {
+  .notActive {
     color: #aaa;
   }
 
-  .img-hidden {
-    transform: scaleX(0);
-  }
-  .img-visible {
-    transform: scaleX(1);
+  .slider2-container {
+    transition: all 350ms linear;
   }
 
   .fixed-element {
