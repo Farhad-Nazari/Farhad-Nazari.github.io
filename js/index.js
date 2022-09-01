@@ -88,46 +88,55 @@ for(let i=0; i<3 ; i++) {
 
 /*slider1*/
 
-const images=["images/3.webp", "images/4.webp","images/5.webp","images/6.webp","images/7.webp","images/8.webp","images/9.webp","images/10.webp","images/11.webp","images/12.webp",];
 const previous = document.querySelector(".slider1-previous");
 const next = document.querySelector(".slider1-next");
-const slider = document.querySelectorAll(".slider1");
+const slider = document.querySelector(".slider1-container");
+const row3Img = document.querySelector(".slider1-img");
 let counter = 0;
+let translateSlider1;
 
-function reset() {
-    slider[0].setAttribute("src",images[9]);
-    slider[1].setAttribute("src",images[0]);
-}
-function slide() {
-    slider[0].setAttribute("src",images[counter]);
-    slider[1].setAttribute("src",images[counter+1]);
+function slider1() {
+  slider.style.transform = `translateX(${-translateSlider1*counter}px)`; 
 }
 
-next.addEventListener("click",function() {
-    counter++;
-    if (counter == 9) {
-       reset();
-    }
-    else if(counter==10){
-          counter = 0;
-          slide();
-      }
-      else {
-        slide();
-      }
+next.addEventListener("click",function(){
+  let screen = window.innerWidth;
+  translateSlider1=row3Img.width;
+  counter++;
+  if (screen<=575 && counter<10) {
+    slider1();
+  }
+  else if (screen<=575 && counter==10) {
+    counter=0; 
+    slider1();
+  }
+  else if (screen>575 && counter<9) {
+    slider1();
+  }
+  else if (screen>575 && counter==9) {
+    counter=0; 
+    slider1();
+  }
 });
-previous.addEventListener("click",function() {
-    counter--;
-    if (counter == -1) {
-      reset();
-    }
-    else if(counter==-2){
-          counter = 8;
-        slide();
-      }
-      else {
-        slide();
-      }
+
+previous.addEventListener("click",function(){
+  let screen = window.innerWidth;
+  translateSlider1=row3Img.width;
+  counter--;
+  if (screen<=575 && counter==-1) {
+    counter=9;
+    slider1();
+  }
+  else if(screen<=575 && counter<9) {
+    slider1();
+  }
+  else if (screen>575 && counter==-1) {
+    counter=8;
+    slider1(); 
+  }
+  else if (screen>575 && counter<8) {
+    slider1();
+  }
 });
 
 /*slider2*/
