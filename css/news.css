@@ -1,0 +1,1865 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSans/IRANSans.woff2') format('woff2'),
+        url('../fonts/IRANSans/IRANSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gohar';
+    src: url('../fonts/gohar/Gohar-Bold.woff2') format('woff2'),
+        url('../fonts/gohar/Gohar-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    direction: rtl;
+}
+/* header */
+#box1 {
+    width: 100%;
+    height: 38px;
+    border-bottom: 1px solid rgb(229,229,229);
+    display: flex;
+    align-items: center;
+}
+#clock {
+    line-height: 38px;
+    margin-right: 100px;
+    font-size: 12px;
+}
+#box1 p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: #2c2f3a;
+    line-height: 38px;
+    margin-right: 5px;
+}
+#importantnews {
+    width: 92px;
+    height: 35px;
+    background-color: #f05555;
+    margin-right: 10px;
+    font-family: "IRANSans";
+    font-size: 11px;
+    color: white;
+    line-height: 35px;
+    margin-right: 5px;
+    text-align: center;
+}
+#topnews {
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: #2c2f3a;
+    line-height: 38px;
+    margin-right: 10px;
+}
+#topnews:hover {
+    color: #0088ff;
+}
+#box1 ul {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+#box1 li {
+    list-style-type: none;
+}
+.headerli {
+    display: block;
+    color: #2c2f34;
+    padding-right: 7px;
+    padding-left: 8px;
+    height: 38px;
+    line-height: 38px;
+}
+.headerli:hover i {
+    color: #0088ff;
+    transition: all linear 150ms;
+}
+.backfor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #808285;
+    margin-right: 7px;
+    transition: all linear 200ms;
+}
+.backfor:hover {
+    background-color: #f05555;
+    color: white;
+}
+#instagram:hover i {
+    color: #c13584;
+}
+#rss:hover i {
+    color: #faa33d;
+}
+#video:hover i {
+    color: #f05555;
+}
+#box2 {
+    width: 100%;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end of header */
+#navigation {
+    max-width: 86%;  
+    height: 60px;
+    background-color: #1f2024;
+    margin: auto;
+}
+#navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navigation li {
+    list-style-type: none;
+    height: 60px;
+}
+.navigationlinks {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;    
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: white;
+    padding-right: 13px;
+    padding-left: 13px;
+    transition: all linear 150ms;
+}
+#home {
+    font-size: 20px;
+    color: white;
+}
+#homelink {
+    display: block;
+    height: 65px;
+    line-height: 60px;
+    background-color: #0088ff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#span-pegah {
+    background-color: #0088ff;
+    border-radius: 20px;
+    padding: 2px 5px;
+    font-size: 11px;
+}
+#search {
+    color: white;
+    margin-right: 10px;
+    transition: all linear 150ms;
+    line-height: 60px;
+}
+#search:hover {
+    color: #0088ff;
+}
+#menu-last-item:hover {
+    background-color: #0088ff;
+}
+#companies {
+    width: 86%;
+    height: 350px;
+    position: absolute;
+    right: 7%;
+    border-top: 2px solid #0088ff;
+    background-color: #1f2024;
+    visibility: hidden;
+    z-index: 10;
+}
+#companies ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+}
+#companies li {
+    display: block;
+    width: 19.6%;
+    height: 51px;
+    list-style-type: none;    
+    margin-top: 11px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+}
+#companies a {
+    display: block;
+    width: 86%;
+    height: 41px;
+    text-decoration-line: none;
+    color: white;
+    line-height: 45px;
+    border-bottom: 1px solid #28292d;
+    font-family: "IranSans";
+    font-size: 13px;
+}
+.underline {
+    width: 50px;
+    height: 2px;
+    background-color: #0088ff;
+}
+#companies li:hover a {
+    color: #0088ff;
+    transition: all ease 150ms;
+}
+#companies li:hover .underline {
+    width: 65px;
+    transition: all ease 150ms;
+}
+#companieslink:hover #companies {
+    visibility: visible;
+}
+#companieslink:hover {
+    background-color: #0088ff;
+}
+
+.submenu {
+    width: 86%;
+    height: 305px;
+    position: absolute;
+    right: 7%;
+    border-top: 2px solid #0088ff;
+    background-color: #1f2024;
+    visibility: hidden;
+    z-index: 10;
+}
+.menu:hover .submenu {
+    visibility: visible;
+}
+.menu:hover {
+    background-color: #0088ff;
+}
+.menu ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.submenu1 {
+    list-style-type: none;
+    width: 17.7%;
+    margin-right: 2%;
+    margin-top: 30px;
+}
+.menu a {
+    display: block;
+}
+.menu img {
+    width: 100%;
+    height: 150px;
+}
+.submenu1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+.submenu1 a:hover {
+    color: #0088ff;
+    transition: all ease 200ms;
+}
+.darkbox:hover {
+    filter: brightness(30%);
+    transition: all ease 200ms;
+}
+.span-date {
+    color: #6e6f6f;
+    font-size: 12px;
+    text-align: right;
+    font-family: "IRANSans";
+}
+#all-reports {
+    width: 230px;
+    height: 260px;
+    background-color: #191a1d;
+    list-style-type: none;
+}
+#menu-last-item {
+    background-color: #3c3c3c;
+}
+#span-pegah {
+    color: white;
+}
+/* end od navigation */
+#box3 {
+    width: 86%;
+    height: 460px;
+    margin: 37px auto;
+    display: flex;
+    
+}
+#box3-1 {
+    width: 66.2%;
+    height: 100%;
+    margin-left: 4px;
+    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../images/project1/news-1.jpeg");
+}
+
+#box3-2 {
+    width: 33.8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#box3-2-1 {
+    display: block;
+    width: 100%;
+    height: 228px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-2.jpeg");
+    background-size: cover;
+}
+#box3-2-2 {
+    display: block;
+    width: 100%;
+    height: 228px;
+    margin-top: 4px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-3.jpeg");
+    background-size: cover;
+}
+.box3-1-p {
+    display: inline-block;
+    position: relative;
+    top: 400px;
+    font-family: "IRANSans";
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+}
+#box3-1-left-p {
+    right: 400px;
+}
+#box3-1-btm {
+    font-size: 14px;
+}
+.box3-2-p {
+    display: inline-block;
+    position: relative;
+    top: 110px;
+    font-family: "IRANSans";
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+#box3-2-btm {
+    font-size: 14px;
+}
+#box3-2-left-p {
+    margin-right: 60px;
+}
+#box3-2-1:hover .box3-2-p-up {
+    transform: translatey(-10px);
+    transition: all ease-in-out 200ms ;
+
+}
+#box3-2-2:hover .box3-2-p-up {
+    transform: translatey(-10px);
+    transition: all ease-in-out 200ms ;
+}
+/*end of box3 */
+#box4 {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*box4-1*/
+#box4-1 {
+    width: 67%;
+}
+#box4-1-1 {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: flex-start;
+}
+#box4-1-1-1 {
+    width: 18%;
+    height: 100%;
+    color: #f5776e;
+    border-bottom: 2px solid #f5776e;
+    font-family: "IRANSans";
+}
+#box4-1-1-1 h3 {
+    font-size: 20px;
+    line-height: 57px;
+    font-weight: bold;
+}
+#box4-1-1-2 {
+    width: 82%;
+    height: 100%;
+    border-bottom: 2px solid #e5e5e5;;
+}
+#box4-1-1-2 ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 60px;
+}
+#box4-1-1-2 li {
+    list-style: none;
+}
+.box4-1-menu a {
+    text-decoration: none;
+    line-height: 60px;
+    font-family: "IRANSans";
+    font-size: 11px;
+    margin-left: 13px;
+    padding: 0px 2px;
+    color: #32353a;
+    border-radius: 3px;
+    transition: all linear 300ms;
+}
+.box4-1-menu a:hover {
+    background-color: #f5776e;
+    color: white;
+}
+#box4-menu-icon {
+    font-size: 16px;
+    color: #32353a;
+    line-height: 60px;
+}
+#box4-menu-icon:hover {
+    color: #f5776e;
+}
+
+#box4-1-2 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    background-color: #f7f7f7;
+}
+.box4-1-2boxes {
+    width: 100%;
+    height: 180px;
+    background-color: #f7f7f7;
+    display: flex;
+    border-bottom: 1px solid #d5d5d5;
+
+}
+.box4-1-2-1 {
+    display: block;
+    width: 258px;
+    height: 100%;
+}
+.box4-1-2-1 img {
+    width: 225px;
+    height: 150px;
+    margin: 16px;
+}
+.box4-1-2-1 img:hover {
+    opacity: 0.8;
+}
+.box4-1-2-2 {
+    width: 520px ;
+    height: 100%;
+}
+.box4-1-2-2 i , span {
+    color: #787878;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.box4-1-2-2 span {
+    color: #787878;
+    font-size: 12px;
+    font-family: "IRANSans";
+}
+.box4-1-2-2 a {
+    text-decoration: none;
+    font-family: "IRANSans";
+    color: #353535;
+}
+.box4-1-2-2 a:hover {
+    color: #f5776e;
+    transition: all linear 200ms;
+}
+.box4-1-2-2 p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: #686868;
+}
+
+#box4-1-3 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box4-1-3-1 {
+    width: 18%;
+    height: 100%;
+    border-bottom: 2px solid #03aa52;
+}
+#image-gallery {
+    text-decoration: none;
+    color: #03aa52;
+    line-height: 100px;
+    font-family: "IRANSans";
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#box4-1-3-2 {
+    width: 82% ;
+}
+#box4-1-3-2 ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#box4-1-3-2 li {
+    list-style-type: none;
+    margin: 5px;
+}
+#box4more {
+    display: block;
+    text-decoration: none;
+    color: #03aa52;
+    line-height: 68px;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+#box4back {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+}
+#box4back i {
+    color: #d3d3d3;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box4for {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+#box4for a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#box4for i {
+    color: #868686;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box4for:hover {
+    background-color: #03aa52;
+} 
+#box4for:hover i {
+    color: white;
+}
+
+#box4-1-4 {
+    display: block;
+    width: 100%;
+    height: 480px;
+    border: 16px solid #c7c7c7;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-15.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    text-decoration: none;
+}
+#box4-1-4 div {
+    width: 40px;
+    height: 22px;
+    background-color: #03aa52;
+    color: white;
+    font-family: "IRANSans";
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    position: relative;
+    top: 82%;
+    right: 5%;
+}
+#box4-1-4 p {
+    font-size: 18px;
+    font-family: "IRANSans";
+    color: white;
+    position: relative;
+    top: 82%;
+    right: 5%;
+}
+#box4-1-4 span {
+    color: white;
+    font-family: "IRANSans";
+    position: relative;
+    top: 82%;
+    right: 87%;
+}
+#box4-1-5 {
+    width: 100%;
+    height: 240px;
+    border-bottom: 2px solid #d5d5d5;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.box4-1-5boxes {
+    width: 237px;
+}
+.box4-1-5boxes img {
+    width: 237px;
+}
+.box4-1-5boxes i,span {
+    font-size: 10px;
+    color: #767676;
+}
+.box4-1-5boxes span {
+    font-size: 12px;
+    color: #767676;
+    font-family: "IRANSans";
+}
+.box4-1-5link {
+    color: #333;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 14px;
+    transition: all ease 200ms;
+}
+.box4-1-5link:hover {
+    color: #038c34;
+}
+.box4-1-5hidden {
+    visibility: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 500px;
+    color: white;
+}
+
+/*end of box4-1 */
+
+#box4-2 {
+    width: 29%;
+}
+#box4-2-1 {
+    width: 100%;
+    height: 38px;
+    margin-top: 19px;
+}
+#box4-2-1 table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
+}
+#box4-2-1 tr {
+    text-align: center;
+}
+#box4-2-1 td {
+    border: 1px solid #e5e5e5;
+    font-family: "IRANSans";
+    font-size: 13px;
+}
+#box4-2-1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    text-decoration: none;
+}
+#mostvisited {
+    height: 100%;
+    color: #0389ff;
+    border-bottom: 1px solid #0389ff;
+}
+#box4-2-2 {
+    width: 100%;
+    margin: 30px 0px;
+}
+.box4-2-2boxes {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box4-2-2-1 {
+    display: block;
+    width: 110px;
+    height: 64px;
+}
+.box4-2-2-1 img {
+    width: 100%;
+    height: 100%;
+}
+.box4-2-2-2 {
+    width: 220px;
+    height: 64px;
+}
+.box4-2-2-2 a {
+    font-family: "IRANSans";
+    color: #7d7d7d;
+    font-size: 13px;
+    text-decoration: none;
+}
+.box4-2-2-2 a:hover {
+    color: #0397ff;
+    transition: all linear 200ms;
+}
+.box4-2-2-2 i {
+    color: #989898;
+    font-size: 12px;
+}
+.box4-2-2-2 span {
+    color: #989898;
+    font-size: 11px;
+    font-family: "IRANSans";
+}
+#box4-2-3 {
+    width: 100%;
+    height: 38px;
+    margin-top: 42px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box4-2-3-1 {
+    width: 135px;
+    height: 100%;
+    line-height: 38px;
+    color: #2e3136;
+    font-size: 15px;
+    border-bottom: 2px solid #2e3136;
+    font-family: "IRANSans";
+    font-weight: bold;
+}
+#box4-2-3-2 {
+    width: 209px;
+    height: 100%;
+    line-height: 38px;
+    color: #babfc4;
+    text-align: end;
+}
+
+
+#box4-2-4 {
+    width: 100%;
+    margin: 20px 0px;
+}
+.box4-2-4boxes {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid #e6e6e6;
+}
+.box4-2-4boxes li {
+    width: 100%;
+    height: 6.25%;
+    color: #e6e6e6;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.box4-2-4boxes a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+.box4-2-4boxes h3 {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "IRANSans";
+    transition: all ease 200ms;
+    color: #7d7d7d;
+    font-weight: 400;
+    padding-right: 15px;
+}
+.box4-2-4span {
+    font-family: "IRANSans";
+    font-size: 10px;
+    color: #a6a6a6;
+    padding-right: 5px;
+}
+.box4-2-4span::before {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-color: #e6e6e6;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: all ease 200ms;
+    position: relative;
+    right: -12px;
+}
+.box4-2-4boxes a:hover h3 {
+    color: #0283f4;
+}
+.box4-2-4boxes a:hover .box4-2-4span::before {
+    background-color: #0283f4;
+}
+#box4-2-5 {
+    display: block;
+    margin-top: 50px;
+}
+/*end of box 4-2 */
+/*end of box4 */
+
+#box5 {
+    width: 86%;
+    margin: 0px auto;
+    height: 50px;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box5-1 {
+    width: 135px;
+    height: 100%;
+    border-bottom: 2px solid #0088ff;
+    line-height: 50px;
+}
+#box5-1 i {
+    font-size: 18px;
+    color: #0088ff;
+}
+#box5-1 p {
+    display: inline-block;
+    font-size: 19px;
+    font-family: "IRANSans";
+    color: #0088ff;
+    font-weight: 600;
+}
+/*end of box5 */
+
+#box6 {
+    width: 86%;
+    height: 390px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+#box6 a {
+    display: block;
+    width: 33.33333%;
+    height: 100%;
+    text-decoration: none;
+}
+#box6 a:hover span {
+    transform: translateY(250px);
+    transition: all linear 350ms;
+}
+#box6 span {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: white;
+    transform: translateY(330px);
+}
+.box6span-1 {
+    display: inline-block;
+    width: 65%;
+    margin-right: 20px;
+}
+.box6span-2 {
+    text-align: end;
+    float: left;
+    margin-left: 20px;
+}
+.box6span-3 {
+    display: inline-block;
+    width: 80%;
+    margin-right: 20px;
+    text-align: justify;
+}
+#box6-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-21.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#box6-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-37.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#box6-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/project1/news-22.jpeg");
+    background-repeat: no-repeat;
+}
+
+/* end of box6 */
+
+#box7 {
+    width: 86%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#box7-1 {
+    width: 67%;
+}
+#box7-1-1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e5e5e5;
+    margin-top: 40px;
+}
+#box7-1-1-1 {
+    width: 150px;
+    height: 100%;
+    border-bottom: 2px solid rgb(30,115,190);
+}
+#box7-1-1-1 a {
+    text-decoration: none;
+    line-height: 50px;
+    font-family: "IRANSans";
+    color: #1e73be;
+    font-size: 19px;
+    font-weight: bold;
+}
+#box7-1-1-2 {
+    width: 627px;
+    height: 100%;
+}
+#box7-1-1-2 ul {
+    height:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 70px;
+}
+#box7-1-1-2 li {
+    height: 50%;
+    list-style-type: none;
+    margin-left: 10px;
+}
+#box7-1-1-2 a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    font-family: "IRANSans";
+    color: #36393d;
+    font-size: 11px;
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: all linear 300ms;
+}
+#box7-1-1-2 a:hover {
+    background-color: #1e73be;
+    color: white;
+}
+
+#box7-1-2 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    background-color: #f7f7f7;
+}
+.box7-1-2boxes {
+    width: 100%;
+    height: 180px;
+    background-color: #f7f7f7;
+    display: flex;
+    border-bottom: 1px solid #d5d5d5;
+}
+.box7-1-2-1 {
+    display: block;
+    width: 258px;
+    height: 100%;
+}
+.box7-1-2-1 img {
+    width: 225px;
+    height: 150px;
+    margin: 16px;
+    transition: all linear 300ms;
+}
+.box7-1-2-1 img:hover {
+    opacity: 0.8;
+}
+.box7-1-2-2 {
+    width: 520px ;
+    height: 100%;
+}
+.box7-1-2-2 i , span {
+    color: #787878;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.box7-1-2-2 span {
+    color: #787878;
+    font-size: 12px;
+    font-family: "IRANSans";
+}
+.box7-1-2-2 a {
+    text-decoration: none;
+    font-family: "IRANSans";
+    color: #353535;
+}
+.box7-1-2-2 a:hover {
+    color: #297ac1;
+    transition: all linear 200ms;
+}
+.box7-1-2-2 p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: #686868;
+}
+
+#box7-1-3 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box7-1-3-1 {
+    width: 23%;
+    height: 100%;
+    border-bottom: 2px solid #9b7167;
+}
+#dairy-news {
+    text-decoration: none;
+    color: #9a6f65;
+    line-height: 100px;
+    font-family: "IRANSans";
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#box7-1-3-2 {
+    width: 82% ;
+}
+#box7-1-3-2 ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#box7-1-3-2 li {
+    list-style-type: none;
+    margin: 5px;
+}
+#box7more {
+    display: block;
+    text-decoration: none;
+    color: #9b7167;
+    line-height: 68px;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+#box7back {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+}
+#box7back i {
+    color: #d3d3d3;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box7for {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+#box7for a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#box7for i {
+    color: #868686;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box7for:hover {
+    background-color: #7e5349;
+} 
+#box7for:hover i {
+    color: white;
+}
+
+#box7-1-4 {
+    width: 100%;
+    height: 340px;
+    background-color: #f7f7f7;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d5d5;
+}
+#box7-1-4-1 {
+    width: 48%;
+    height: 100%;
+}
+#box7-1-4-1link1 {
+    display: block;
+    width: 100%;
+    height: 44%;
+    margin-top: 18px;
+    overflow: hidden;
+}
+#box7-1-4-1 img {
+    margin: -40px -10px;
+}
+#box7-1-4-1 i {
+    color: #666;
+    font-size: 10px;
+    margin: 12px 0px;
+}
+#box7-1-4-1 span {
+    color: #666;
+    font-size: 11px;
+    font-family: "IRANSans";
+}
+#box7-1-4-1link2 {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-family: "IRANSans";
+    font-size: 17px;
+    transition: all linear 300ms;
+}
+#box7-1-4-1link2:hover {
+    color: #7e5349;
+}
+#box7-1-4-1 p {
+    color: #666;
+    font-family: "IRANSans";
+    font-size: 12px;
+    text-align: justify;
+}
+
+#box7-1-4-2 {
+    width: 48%;
+    height: 100%;
+}
+#box7-1-4-2 i {
+    color: #666;
+    font-size: 10px;
+}
+#box7-1-4-2 span {
+    color: #666;
+    font-size: 11px;
+    font-family: "IRANSans";
+}
+.box7-1-4-2boxes {
+    width: 100%;
+    height: 22%;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+.box7-1-4-2-1link1 {
+    width: 29%;
+    height: 100%;
+    float: right;
+    clear: both;
+    margin-left: 15px;
+}  
+.box7-1-4-2-1link1 img {
+    width: 100%;
+    height: 100%;
+}
+.box7-1-4-2-1link2 {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-family: "IRANSans";
+    font-size: 14px;
+    transition: all linear 200ms;
+}
+.box7-1-4-2-1link2:hover {
+    color: #7e5349;
+}
+
+
+#box7-1-5 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box7-1-5-1 {
+    width: 18%;
+    height: 100%;
+    border-bottom: 2px solid #00afd8 ;
+}
+#international-news {
+    text-decoration: none;
+    color: #00afd8 ;
+    line-height: 100px;
+    font-family: "IRANSans";
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#box7-1-5-2 {
+    width: 82% ;
+}
+#box7-1-5-2 ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#box7-1-5-2 li {
+    list-style-type: none;
+    margin: 5px;
+}
+#box7more {
+    display: block;
+    text-decoration: none;
+    color: #00afd8 ;
+    line-height: 68px;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+
+#box7-1-6 {
+    width: 100%;
+    height: 340px;
+    background-color: #f7f7f7;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d5d5;
+}
+#box7-1-6-1 {
+    width: 48%;
+    height: 100%;
+}
+#box7-1-6-1link1 {
+    display: block;
+    width: 100%;
+    height: 44%;
+    margin-top: 18px;
+    overflow: hidden;
+}
+#box7-1-6-1 img {
+    margin: -40px -10px;
+}
+#box7-1-6-1 i {
+    color: #666;
+    font-size: 10px;
+    margin: 12px 0px;
+}
+#box7-1-6-1 span {
+    color: #666;
+    font-size: 11px;
+    font-family: "IRANSans";
+}
+#box7-1-6-1link2 {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-family: "IRANSans";
+    font-size: 17px;
+    transition: all linear 300ms;
+}
+#box7-1-6-1link2:hover {
+    color: #00afd8;
+}
+#box7-1-6-1 p {
+    color: #666;
+    font-family: "IRANSans";
+    font-size: 12px;
+    text-align: justify;
+}
+
+#box7-1-6-2 {
+    width: 48%;
+    height: 100%;
+}
+#box7-1-6-2 i {
+    color: #666;
+    font-size: 10px;
+}
+#box7-1-6-2 span {
+    color: #666;
+    font-size: 11px;
+    font-family: "IRANSans";
+}
+.box7-1-6-2boxes {
+    width: 100%;
+    height: 22%;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+.box7-1-6-2-1link1 {
+    width: 29%;
+    height: 100%;
+    float: right;
+    clear: both;
+    margin-left: 15px;
+}  
+.box7-1-6-2-1link1 img {
+    width: 100%;
+    height: 100%;
+}
+.box7-1-6-2-1link2 {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-family: "IRANSans";
+    font-size: 14px;
+    transition: all linear 200ms;
+}
+.box7-1-6-2-1link2:hover {
+    color: #00afd8;
+}
+
+#box7-1-7 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box7-1-7-1 {
+    width: 18%;
+    height: 100%;
+    border-bottom: 2px solid #dd3333 ;
+}
+#pegah-media {
+    text-decoration: none;
+    color: #dd3333 ;
+    line-height: 100px;
+    font-family: "IRANSans";
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#box7-1-7-2 {
+    width: 82% ;
+}
+#box7-1-7-2 ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#box7-1-7-2 li {
+    list-style-type: none;
+    margin: 5px;
+}
+#box7more {
+    display: block;
+    text-decoration: none;
+    color: #dd3333 ;
+    line-height: 68px;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+
+#box7-1-8 {
+    width: 100%;
+    height: 535px;
+    border-bottom: 1px solid #d5d5d5;
+    background-color: #f7f7f7;
+    margin: 20px 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box7-1-8boxes {
+    width: 48%;
+    height: 26%;
+}
+.box7-1-8boxes i {
+    color: #767676;
+    font-size: 10px;
+}
+.box7-1-8boxes span {
+    color: #767676;
+    font-size: 12px;
+    font-family: "IRANSans";
+}
+.box7-1-8boxes>a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-family: "IRANSans";
+}
+.box7-1-8boxes>div {
+    width: 100%;
+    height: 54%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box7-1-8boxes>div>a {
+    width: 45%;
+}
+.box7-1-8boxes img {
+    width: 100%;
+    height: 100%;
+}
+.box7-1-8boxes p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: #666;
+    margin-right: 15px;
+}
+
+/*end of box7-1 */
+
+#box7-2 {
+    width: 29%;
+}
+#box7-2-1 {
+    width: 100%;
+    height: 38px;
+    margin-top: 42px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box7-2-1-1 {
+    width: 135px;
+    height: 100%;
+    line-height: 38px;
+    color: #2e3136;
+    font-size: 17px;
+    border-bottom: 2px solid #2e3136;
+    font-family: "IRANSans";
+    font-weight: bold;
+}
+#box7-2-1-2 {
+    width: 209px;
+    height: 100%;
+    line-height: 38px;
+    color: #babfc4;
+    text-align: end;
+}
+#box7-2-1-2 {
+    font-size: 14px;
+}
+
+#box7-2-2 {
+    width: 100%;
+}
+#box7-2-2 ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#box7-2-2 li {
+    width: 100%;
+    height: 22px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+#box7-2-2 a {
+    float: right;
+    text-decoration: none;
+    color: #333;
+    font-family: "IRANSans";
+    font-size: 13px;
+    transition: all linear 300ms;
+}
+#box7-2-2 a:hover {
+    color: #0088ff;
+}
+#box7-2-2 a:hover +span {
+    background-color: #0360b2;
+}
+#box7-2-2 i {
+    color: #959699;
+    font-size: 10px;
+}
+#box7-2-2 span {
+    float: left;
+    height: 22px;
+    background-color: #0088ff;
+    color: white;
+    padding: 0px 3px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    min-width: 22px;
+    font-size: 13px;
+    position: relative;
+    bottom: 20px;
+    transition: all linear 300ms;
+}
+
+#box7-2-3 {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #e5e5e5;
+    margin-top: 40px;
+}
+#box7-2-3-1 {
+    width: 150px;
+    height: 100%;
+    line-height: 38px;
+    color: #2e3136;
+    font-size: 17px;
+    border-bottom: 2px solid #2e3136;
+    font-family: "IRANSans";
+    font-weight: bold;
+}
+#box7-2-3-2 {
+    width: 209px;
+    height: 100%;
+    line-height: 38px;
+    color: #babfc4;
+    text-align: end;
+}
+#box7-2-3-2 {
+    font-size: 14px;
+}
+
+#box7-2-4 {
+    width: 100%;
+}
+#box7-2-4 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#box7-2-4 li {
+    width: 49%;
+    height: 170px;
+    list-style-type: none;
+}
+#box7-2-4 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all linear 300ms;
+}
+#box7-2-4 a:hover {
+    opacity: 80%;
+}
+#box7-2-4-link1 {
+    background-image: url("../images/project1/news-39.jfif");
+    background-size: cover;
+}
+#box7-2-4-link2 {
+    background-image: url("../images/project1/news-40.jpg");
+    background-size: cover;
+}
+#box7-2-4-link3 {
+    background-image: url("../images/project1/news-41.jfif");
+    background-size: cover;
+}
+#box7-2-4-link4 {
+    background-image: url("../images/project1/news-42.jpg");
+    background-size: cover;
+}
+#box7-2-4-link5 {
+    background-image: url("../images/project1/news-43.jpg");
+    background-size: cover;
+}
+#box7-2-4-link6 {
+    background-image: url("../images/project1/news-21.jpg");
+    background-size: cover;
+}
+
+#box7-2-5and6 {
+    display: flex;
+    justify-content: center;
+}
+
+#box7-2-5 {
+    width: 107px;
+    height: 35px;
+    display: inline-block;
+    background-color: #e34866 ;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#box7-2-5 span {
+    line-height: 35px;
+    color: white;
+    font-family: "IRANSans";
+}
+#box7-2-5:hover , #box7-2-6:hover {
+    opacity: 80%;
+}
+#box7-2-6 {
+    width: 133px;
+    height: 35px;
+    display: inline-block;
+    background-color: #428cd2 ;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#box7-2-6 span {
+    line-height: 35px;
+    color: white;
+    font-family: "IRANSans";
+}
+#box7-2-6 i {
+    color: white;
+    font-size: 12px;
+}
+
+/* end of box7-2 */
+/* end of box7 */
+
+#box8-1 {
+    width: 86%;
+    height: 68px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #e5e5e5;
+}
+#box8-1-1 {
+    width: 12%;
+    height: 100%;
+    border-bottom: 2px solid #08f;
+
+}
+#infography {
+    text-decoration: none;
+    color: #08f;
+    line-height: 100px;
+    font-family: "IRANSans";
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+#box8-1-2 {
+    width: 88% ;
+}
+#box8-1-2 ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#box8-1-2 li {
+    list-style-type: none;
+    margin: 5px;
+}
+#box8more {
+    display: block;
+    text-decoration: none;
+    color: #08f;
+    line-height: 68px;
+    font-family: "IRANSans";
+    font-size: 12px;
+}
+#box8back {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+}
+#box8back i {
+    color: #d3d3d3;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box8for {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+#box8for a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#box8for i {
+    color: #868686;
+    font-size: 10px;
+    margin-right: 8px;
+    line-height: 20px;
+}
+#box8for:hover {
+    background-color: #08f;
+} 
+#box8for:hover i {
+    color: white;
+}
+
+#box9 {
+    width: 86%;
+    height: 277px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d5d5d5;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box9boxes {
+    width: 23.7%;
+    height: 100%;
+}
+.box9boxes a {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-family: "IRANSans";
+    font-size: 14px;
+    transition: all linear 200ms;
+}
+.box9boxes img {
+    width: 100%;
+}
+.box9boxes i {
+    margin: 10px 0px;
+    color: #767676;
+    font-size: 10px;
+}
+.box9boxes span {
+    color: #767676;
+    font-size: 12px;
+    font-family: "IRANSans";
+}
+.box9boxes a:hover {
+    color: #08f;
+}
+
+#footer {
+    width: 100%;
+    height: 454px;
+    background-color: #113163;
+}
+
+#footer-1 {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #2d4975;
+}
+#footer-1-1 {
+    width: 29%;
+    margin-right: 66px;
+}
+#footer-1-2 {
+    width: 13%;
+    margin-right: 40px;
+}
+#footer-1-3 {
+    width: 13%;
+    margin: 0px 50px;
+}
+#footer-1-4 {
+    width: 24%;
+}
+#footer-1-1 img {
+    display: block;
+    margin: 50px auto 20px;
+    height: 70px;
+}
+#footer-1-1 p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    text-align: justify;
+    color: white;
+    line-height: 30px;
+}
+.footer-headings {
+    display: block;
+    width: 135px;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "IRANSans";
+    line-height: 40px;
+    font-size: 18px;
+}
+#footer-1-4-p {
+    font-family: "IRANSans";
+    color: white;
+    font-size: 13px;
+}
+.box821 {
+    width: 100%;
+    text-decoration: none;
+    margin-top: 5px;
+    font-family: "IRANSans";
+    font-size: 13px;
+    line-height: 30px;
+    color: white;
+}
+
+#footer-1-4 iframe {
+    margin-top: 20px;
+}
+#footer-2 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+}
+#footer-2 ul {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 65px;
+}
+#footer-2 li {
+    height: 100%;
+    list-style-type: none;
+    margin-left: 4px;
+}
+#footer-2 a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    padding: 3px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+#footer-2 i {
+    font-size: 13px;
+}
+#footer-2 span {
+    font-family: "IRANSans";
+    font-size: 12px;
+    color: white;
+}

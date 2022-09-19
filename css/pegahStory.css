@@ -1,0 +1,577 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSans/IRANSans.woff2') format('woff2'),
+        url('../fonts/IRANSans/IRANSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gohar';
+    src: url('../fonts/gohar/Gohar-Bold.woff2') format('woff2'),
+        url('../fonts/gohar/Gohar-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    direction: rtl;
+}
+/* Navigation menu*/
+#navigation {
+    width: 100%;
+    height: 67px;
+}
+#menu {
+    display: flex;
+}
+#menu>li:not(.noborder) {
+    height: 67px;
+    list-style-type: none;
+    border-left: 1px solid #f2f2f2;
+    margin-right: 4px;
+}
+.noborder {
+    height: 67px;
+    list-style-type: none;
+    margin-right: 4px;
+}
+.links,#menu>li>span {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    border-top: 4px solid white;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 11.5px;
+    color: #767676;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: all linear 350ms;
+}
+#currentpage {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 11.5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: all linear 350ms;
+    border-top: 4px solid #1d4789;
+    color: #1d4789;
+}
+#home {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 11.5px;
+    padding-left: 13px;
+    padding-right: 18px;
+    margin-right: 52px;
+}
+#logo {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    border-top: 4px solid white;
+    text-decoration: none;
+    font-family: "IRANSans";
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#search {
+    line-height: 70px;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 18px;
+    margin-right: 50px;
+    color: #767676;
+}
+#menu>li>span:hover,.links:hover{
+    color: #1d4789;
+    border-top: 4px solid #1d4789;
+}
+/*End of Navigation Menu*/
+/* Navigation Submenu*/
+.submenu , .submenu1 , .submenu2 {
+    width: 200px;
+    visibility: hidden;
+    background-color: #f2f2f2;
+    position: absolute;
+    border-radius: 10px;
+}
+.submenu1 , .submenu2 {   
+    margin-top: -42px;
+    margin-right: 195px;
+}
+.submenu li {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+}
+.submenu li:not(:last-child){
+    border-bottom: 1px solid #e6e6e6;
+}
+.submenu a{
+    display: inline-block;
+    width: 97%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 11.5px;
+    color: #767676;
+}
+.submenu i {
+    font-size: 9px;
+    color: #acacac;
+    margin-right: -5px;
+}
+.submenu li:hover .submenu1, .submenu1 li:hover .submenu2, #menu li:hover .submenu{
+    visibility: visible;
+}
+.submenu li:hover {
+    background-color: #e4e4e4;
+}
+.submenu a:hover {
+    color: #2e2e2e; 
+}
+.submenu li:first-child:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.submenu li:last-child:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*
+/*End of Header*/
+/*Fixed elements*/
+#robot {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("../images/project1/robot.jpg");
+    background-size: contain;
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    transition: all linear 400ms;
+    z-index: 20;
+}
+#robot:hover {
+    transform: scale(1.1);
+}
+.fixed {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    position: fixed;
+    font-family: "IRANSans";
+    color: #262626;
+    background-color: #fcfcfc;
+    font-size: 11px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 20;
+}
+#fixed1 {
+    bottom: 140px;
+    right: 57px;
+    width: 224px;
+}
+#fixed2 {
+    bottom: 100px;
+    right: 57px;
+    width: 174px;
+}
+#link2top {
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    background-color: white;
+    color: #28508f;
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    text-decoration: none;
+}
+#link2top i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 42px;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+}
+/* End of Fixed elements*/
+/*box1*/
+#box1 {
+    width: 100%;
+    height: 590px;
+    background-color: #0c3068;
+}
+#box12 {
+    width: 55%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+}
+#box13 {
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+}
+#box12 h1 {
+    display: inline-block;
+    font-family: "gohar";
+    color: white;
+    font-size: 40px;
+    padding-left: 120px;
+    margin-right: 120px;
+    margin-top: 180px;
+    animation-name: box12h1;
+    animation-duration: 500ms;
+    animation-timing-function:ease-in-out;
+}
+@keyframes box12h1 {
+    from {transform: translatex(30px);}
+    to {transform: translatex(0px);}
+}
+#box12 p {
+    font-family: "IRANSans";
+    font-size: 11.5px;
+    padding-left: 95px;
+    padding-right: 120px;
+    text-align: justify;
+    color: white;
+    line-height: 25px;
+    margin-top:30px;
+    animation-name: box12p;
+    animation-duration: 500ms;
+    animation-timing-function:ease-in-out;
+
+}
+@keyframes box12p {
+    from {transform: scale(0.5);}
+    to {transform: scale(1);}
+}
+#box13 img {
+    width: 450px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+/*End of box1*/
+/*box2*/
+#box2 {
+    width: 100%;
+    height: 650px;
+    background-image: url("../images/project1/bg-main.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+#box21 {
+    width: 37.5%;
+    height: 100%;
+}
+#box22 {
+    width: 25%;
+    height: 100%;
+}
+#box22 img {
+    margin-top: 50px;
+}
+#box23 {
+    width: 37.5%;
+    height: 100%;
+}
+#box2 h2 {
+    font-family: "gohar";
+    font-size: 32px;
+    color: #1d4789;
+    margin-top: 40px;
+    text-align: center;
+}
+#box2 p {
+    font-family: "IRANSans";
+    font-size: 13px;
+    color: #2b2b2b;
+    text-align: justify;
+    line-height: 35px;
+}
+#box21 p {
+    margin-right: 80px;
+    margin-left: 40px;
+}
+#box23 p {
+    margin-right: 40px;
+    margin-left: 80px;
+}
+/*end of box2*/
+/*box3*/
+#box3 {
+    width: 100%;
+    height: 650px;
+    background-color: #0c3068;
+}
+#box3 h2 {
+    height: 170px;
+    line-height: 170px;
+    font-family: "gohar";
+    font-size: 33px;
+    color: white;
+    text-align: center;
+}
+#box31 {
+    width: 37.5%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box32 {
+    width: 25%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box33 {
+    width: 37.5%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box3 p {
+    font-family: "IRANSans";
+    font-size: 13px;
+    color: #fff;
+    text-align: justify;
+    line-height: 35px;
+}
+#box31 p {
+    margin-right: 80px;
+    margin-left: 40px;
+}
+#box33 p {
+    margin-right: 40px;
+    margin-left: 80px;
+}
+/*End of box3*/
+/*box4*/
+#box4 {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/project1/bg-main.png");
+    background-size: cover;
+}
+#box4 h2 {
+    height: 120px;
+    line-height: 120px;
+    font-family: "gohar";
+    font-size: 33px;
+    color: #0d326c;
+    text-align: center;
+}
+#box41 {
+    width: 37.5%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box42 {
+    width: 25%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box43 {
+    width: 37.5%;
+    height: 480px;
+    display: inline-block;
+    float: right;
+}
+#box4 p {
+    font-family: "IRANSans";
+    font-size: 13px;
+    color: #2b2b2b;
+    text-align: justify;
+    line-height: 35px;
+}
+#box41 p {
+    margin-right: 80px;
+    margin-left: 40px;
+}
+#box43 p {
+    margin-right: 40px;
+    margin-left: 80px;
+}
+/*End of box4*/
+/*box5*/
+#box5 {
+    width: 100%;
+    height: 1870px;
+    display: flex;
+    justify-content: center;
+}
+#box51 {
+    width: 50%;
+    height: 100%;
+    background-color: #f87271;
+}
+#box52 {
+    width: 50%;
+    height: 100%;
+    background-color: #ff9000;
+}
+#box5 h2 {
+    font-family: "gohar";
+    color: white;
+    text-align: center;
+    font-size: 33px;
+    line-height: 100px;
+}
+#box5 p {
+    font-family: "IRANSans";
+    font-size: 13px;
+    text-align: justify;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 35px;
+
+}
+.box5img {
+    display: block;
+   margin: 50px auto;
+}
+#box5p3 {
+    display: block;
+    margin: 0px auto 270px;
+    
+}
+/*End of box5*/
+/*footer*/
+#box8 {
+    width: 100%;
+    height: 572px;
+    background-image: url("../images/project1/footer.jpg");
+    background-size: cover;
+}
+#box81 {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(44,50,58,0.6);
+}
+#box81 p{
+    font-family: "IRANSans";
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    line-height: 85px;
+}
+#box81 a {
+    text-decoration: none;
+    font-family: "IRANSans";
+    font-size: 14px;
+    color: white;
+}
+#box81 a:hover {
+    color: rgb(13, 149, 229);
+}
+
+#box82 {
+    width: 100%;
+    height: 74%;
+    display: flex;
+    justify-content: center;
+}
+.box82{
+    width: 20%;
+    height: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.box82 img {
+    display: block;
+    margin: 50px auto 20px;
+}
+.box82 p {
+    font-family: "IRANSans";
+    font-size: 13px;
+    text-align: justify;
+    color: white;
+    
+}
+.box82 h3 {
+    font-family: "gohar";
+    font-size: 16px;
+    color: white;
+    margin-top: 50px;
+}
+.box821 {
+    display: block;
+    width: 100%;
+    height: 55px;
+    text-decoration: none;
+    background-color: rgb(44,50,58,0.6);
+    margin-top: 5px;
+    font-family: "IRANSans";
+    font-size: 13px;
+    line-height: 55px;
+    color: #cccccc;
+}
+.box821:hover {
+    background-color: #494e57;
+    color: white;
+}
+#box82 iframe {
+    margin-top: 20px;
+}
+
+#box83 {
+    width: 90%;
+    height: 10%;
+    box-sizing:border-box;
+    margin: 0px auto;
+    border-top: 1px solid #f89c00;
+}
+#box83 div {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+}
+#box83 p {
+    font-family: "IRANSans";
+    font-size: 12px;
+    text-align: right;
+    padding-right: 40px;
+    color: #bfbfbf;
+    line-height: 55px;
+}
+#box83 i {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+#box83 a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 55px;
+    margin-left: 15px;
+}
+/* end of footer*/

@@ -4,494 +4,314 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspiring the Love of Tea | Shop for quality English tea at Ahmad Tea</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Farhad Nazari (FrontEnd Developer)</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-    <!-- cookies-->
-    <div class="cookies-container hidden">
-        <div class="d-flex flex-column justify-content-around cookies">
-            <i class="bi bi-x-lg p-3 cookies-icon"></i>
-            <a href="#"><img src="images/logo.png" loading="lazy" alt="Logo" title="Ahmad Tea"></a>
-            <h2 class="text-center mb-0 px-2">CONTINUE TO GLOBAL SITE</h2>
-            <a href="#" class="d-inline-block btn1">VISIT AHMAD TEA</a>
-            <h6 class="text-center mb-0">VISIT ONLINE STORE</h6>
-            <a href="#" class="d-inline-block btn1">SHOP NOW</a>
+    <div class="header bg-white">
+        <div class="d-flex justify-content-lg-between px-3 mx-auto nav">
+            <div class="d-lg-none d-flex justify-content-between mobile-menu">
+                <i class="bi bi-list fw-bold px-1 icon"></i>
+                <a href="#" class="text-decoration-none px-3 logo"><span class="text-white fst-italic fs-3 fw-bold p-1 button">FN</span></a>
+                <span class="px-2 fw-bold EN">EN <i class="bi bi-chevron-down fw-bold"></i>
+                    <div class="hide fa-mobile"><a href="#">FA</a></div>
+                </span>
+            </div>
+            <a href="#" class="d-none d-lg-block text-decoration-none logo"><span class="text-white fst-italic fs-3 fw-bold p-1 button">FN</span></a>
+            <ul class="d-flex flex-wrap flex-lg-nowrap my-0 px-0 navigation">
+                <li class="px-3 me-2 navigation-li"><a href="#">Home</a></li>
+                <li class="px-3 me-2 navigation-li"><a href="#aboutme">About Me</a></li>
+                <li class=" px-3 me-2 navigation-li"><a href="#skills">Skills</a></li>
+                <li class="px-3 me-2 navigation-li"><a href="#services">Services</a></li>
+                <li class="px-3 me-2 navigation-li"><a href="#projects">Projects</a></li>
+                <li class="px-3 me-2 navigation-li"><a href="#contact">Contact </a></li>
+            </ul>
+            <span class="d-none d-lg-block lang">Language <i class="bi bi-chevron-down"></i>
+                <div class="position-absolute hide fa"><a href="#">FA</a></div>
+            </span>
         </div>
     </div>
-    
-    <!-- Header -->
-    <div class="py-3 pb-lg-0 header">
 
-        <div class="d-lg-flex justify-content-lg-between px-3 header-container">
-
-            <div class="navIcon d-flex d-lg-none">
-                <div class="menu-ham d-flex flex-wrap align-items-center">
-                     <div class="bars"></div>
-                     <div class="bars"></div>
-                     <div class="bars"></div>
-                </div>
-                <div class="menuClose ps-1">MENU</div>
+    <div class="container-fluid px-0">
+        <div class="row justify-content-between px-0 home">
+            <div class="col-12 col-lg-6 px-3 d-flex flex-column align-items-center justify-content-center home-1">
+                <h2 class="mb-4 text-center">Hello, I'am</h2>
+                <h1 class="mb-4 text-center">FARHAD NAZARI</h1>
+                <h2 class="text-center">Front End Developer</h2>
+                <a href="#" class="button py-2 px-3 my-3">Download Resume</a>
             </div>
-
-            <a href="index.html" class="d-block logo-link">
-                <img src="images/logo.png" alt="Ahmad-Tea-Logo" loading="lazy" title="Ahmad Tea" class="w-100">
-            </a>
-
-            <div class="d-flex flex-nowrap d-lg-block navigation">
-                <ul class="d-flex flex-wrap p-0 m-0 justify-content-lg-end menu1">
-                    <li class="text-center d-none d-lg-block"><a href="#" class="pt-lg-1 pe-lg-3 pb-lg-3">Contact Us</a></li>
-                    <li class="text-center d-lg-none"><a href="#" class="pt-lg-1 pe-lg-3 pb-lg-3">CONTACT US</a></li>
-                    <li class="text-center d-none d-lg-block position-relative" id="coutry"><a href="#" class="pt-lg-1 pb-lg-3">Select Country <i class="bi bi-chevron-down d-none d-lg-inline-block"></i></a>
-                    <ul class="countries px-0">
-                        <li><a href="#" class="px-0">UK</a></li>
-                        <li><a href="#" class="px-0">USA</a></li>
-                        <li><a href="#" class="px-0">Belarus</a></li>
-                        <li><a href="#" class="px-0">Czeck Republic</a></li>
-                        <li><a href="#" class="px-0">Egypt</a></li>
-                        <li><a href="#" class="px-0">Estonia</a></li>
-                        <li><a href="#" class="px-0">Germany</a></li>
-                        <li><a href="#" class="px-0">Greece</a></li>
-                        <li><a href="#" class="px-0">Italy</a></li>
-                        <li><a href="#" class="px-0">Japan</a></li>
-                        <li><a href="#" class="px-0">Latvia</a></li>
-                        <li><a href="#" class="px-0">Lithuania</a></li>
-                        <li><a href="#" class="px-0">Malaysia</a></li>
-                        <li><a href="#" class="px-0">Nigeria</a></li>
-                        <li><a href="#" class="px-0">Poland</a></li>
-                        <li><a href="#" class="px-0">Russia</a></li>
-                        <li><a href="#" class="px-0">Sri Lanka</a> </li>
-                        <li><a href="#" class="px-0">Switzerland</a></li>
-                        <li><a href="#" class="px-0">Turkey</a></li>
-                        <li><a href="#" class="px-0">UAE</a></li>
-                        <li><a href="#" class="px-0">Uzbekistan</a></li>
-                        <li><a href="#" class="px-0">Ukrain</a></li>
-                        <li><a href="#" class="px-0">Vietnam</a></li>
-                    </ul>
-                    </li>
-                    <li class="text-center d-lg-none"><a href="#" class="pt-lg-1 pb-lg-3">SELECT COUNTRY</a></li>
-                    <li class="text-center d-lg-none"><a href="#">SEARCH</a></li>
-                </ul>
-
-                <div class="d-flex menu2">
-                    <ul class="d-flex flex-wrap p-0 m-0">
-                        <li class="px-lg-3 text-center "><a href="#" class="submenu-li"><span>WHO WE ARE</span><i class="bi bi-chevron-right d-lg-none "></i></a>
-                            <div class="position-absolute d-flex flex-column justify-content-start px-0 submenu hideNav"> 
-                                <ul class="px-0">
-                                    <li class="d-lg-none px-lg-3 back"><a href="#" class="pb-lg-0 back-link"><i class="bi bi-chevron-left"></i><span>Back</span></a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">Our Story</a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">Our Brand Story</a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">Our Facilities</a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">Awards</a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">The Wall Of Tea</a></li>
-                                    <li class="px-lg-3"><a href="#" class="pb-lg-0">Kew Beyond The Leaf</a></li>
-                                </ul>
-                                <div class="d-lg-none pt-4 d-flex justify-content-center mx-auto icons">
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-instagram"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-facebook"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-twitter"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-youtube"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="px-lg-3 text-center"><a href="#" class="submenu-li"><span>TEA ARTISTRY</span><i class="bi bi-chevron-right d-lg-none "></i></a>
-
-                            <div class="position-absolute d-flex flex-column justify-content-start px-0 submenu hideNav"> 
-                                <ul class="px-0">
-                                <li class="d-lg-none px-lg-3 back"><a href="#" class="pb-lg-0 back-link"><i class="bi bi-chevron-left"></i><span>Back</span></a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Tea Artistry</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Tea Collections</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">The Tea Journey</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Tea Recipes</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">What It Takes</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Journal</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Galerie Du Thé</a></li>
-                                </ul>
-                                <div class="d-lg-none pt-4 d-flex justify-content-center mx-auto icons">
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-instagram"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-facebook"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-twitter"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-youtube"></i></a>
-                                </div>
-                            </div>    
-                        </li>
-                        <li class="px-lg-3 text-center"><a href="#" class="submenu-li"><span>OUR IMPACT</span><i class="bi bi-chevron-right d-lg-none "></i></a>
-                            <div class="position-absolute d-flex flex-column justify-content-start px-0 submenu hideNav"> 
-                                <ul class="px-0">
-                                    <li class="d-lg-none px-lg-3 back"><a href="#" class="pb-lg-0 back-link"><i class="bi bi-chevron-left"></i><span>Back</span></a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Overview</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Community</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Responsible Sourcing</a></li>
-                                <li class="px-lg-3"><a href="#" class="pb-lg-0">Sustainability & The Environment</a></li>
-                                </ul>
-                                <div class="d-lg-none pt-4 d-flex justify-content-center mx-auto icons">
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-instagram"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-facebook"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-twitter"></i></a>
-                                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-youtube"></i></a>
-                                </div>
-                            </div>
-
-                            
-                            
-                        </li>
-                        <li class="px-lg-3 text-center"><a href="#">ASK AHMAD TEA</a></li>
-                    </ul>
-                    <a href="#" class="d-none d-lg-block px-lg-3 fw-bold shop">SHOP NOW</a>
-                    <div>
-                        <span class="d-none d-lg-block search-icon"><i class="bi bi-search search-i"></i>
-                            <div class="p-2 bg-white search-form hideForm">
-                                <form action="get" class="d-flex formNav">
-                                        <input type="text" class="p-2 border-0 inputNav"><i class="bi bi-search bg-white p-2 form-i"></i>
-                                </form>
-                            </div>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="order-3 pt-4 d-lg-none d-flex justify-content-center icons">
-                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-instagram"></i></a>
-                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-facebook"></i></a>
-                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-twitter"></i></a>
-                    <a href="#" class="px-2" title="https://www.ahmadtea.com/#"><i class="bi text-white bi-youtube"></i></a>
-                </div>
-
-            </div>
-            <a href="#" class="d-block d-lg-none px-0 fw-bold shop">SHOP NOW</a>
+            <div class="col-12 col-lg-6 d-flex justify-content-center px-0 home-2"><a href="#" class="w-75"><img src="images/1.png" class="w-100"></a></div>
         </div>
-    </div>
-    <!-- End of Header -->
 
-    <div class="main">
-        <div class="container-fluid px-0">
-            <div class="row mx-0 video-box">
-                <div class="px-0 over-video"></div>
-                <video autoplay="autoplay" muted="muted" loop="loop" class="px-0"><source src="videos/Cold-Brew-Tea_1920x1080_V2.mp4" loading="lazy"></video>
+        <div class="row mx-0 simple-row">
+            <div class="col-12 px-0">
+                <h2 class="text-center fst-italic my-0 px-3">All the Story Begun as a Fun <br> But Soon Turned to Shine Like Sun</h2>
             </div>
+        </div>
 
-            <div class="row mx-0">
-                <div class="col-12 px-3 text-white row1">
-                    <h6 class="mb-2">IT'S TIME FOR</h6>
-                    <h1 class="mb-2 display-3 fw-bold">ICED TEA</h1>
-                    <h2 class="mb-5 display-6 fw-bold ">THAT BREWS IN COLD WATER</h2>
-                    <a href="#" class="d-inline-block btn1">VIEW COLD BREW</a>
+        <div class="row mx-auto about-me" id="aboutme">
+            <div class="col-12 px-3 pb-4">
+                <h2 class="mb-0 fw-bold"><span class="fw-bold text-primary">A</span>bout Me:</h2>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-5 my-3 offset-sm-1 offset-md-0 offset-lg-1 order-2 order-md-1 px-0 description">
+                <div class="col-12 h-100">
+                    <h4 class="fw-bold">Background</h4>
+                    <p class="mb-0">I have embarked on my endless jurney towards web development, and passed several courses of web design at Tehran Institute of Technology. I am extremely motivated to be a member of an international team as frontend web developer to work with collaboration, positive attitude and love.</p>
                 </div>
             </div>
-
-             <div class="row mx-0 row2">
-                <div class="col-12 mx-auto d-flex flex-wrap justify-content-center px-3">
-                    <div class="col-12 col-md-6 d-flex flex-column">
-                        <a href="#" class="zoom"><img class="w-100" src="images/1.webp" loading="lazy" alt="SUSTAINABILITY REPORT" title="SUSTAINABILITY REPORT"></a>
-                        <div class="bg-white p-4 row2-description">
-                            <h6>WORKING FOR A SUSTAINABLE FUTURE</h6>
-                            <h3 class="mb-3">SUSTAINABILITY REPORT</h3>
-                            <p>Developing a sustainable business with a strong ethical conscience is the driving force behind Ahmad Tea. We are proud to share our Sustainability Report for 2021/2022.</p>
-                            <a href="#" class="btn1">LEARN MORE</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex flex-column">
-                        <a href="#" class="zoom"><img class="w-100" src="images/2.webp" loading="lazy" alt="DECAFFEINATED COLLECTION" title="DECAFFEINATED COLLECTION"></a>
-                        <div class="bg-white p-4 row2-description">
-                            <h6>NEW TEA RANGE</h6>
-                            <h3 class="mb-3">DECAFFEINATED COLLECTION</h3>
-                            <p>Always at the forefront of tea innovation, Ahmad Tea’s new range of Decaffeinated Teas will delight anyone who longs for classic brews, without the caffeine.</p>
-                            <a href="#" class=" btn1">SHOP NOW</a>
-                        </div>
-                    </div>
+            <div class="col-sm-10 col-md-6 col-lg-5 my-3 offset-sm-1 offset-md-0 order-1 order-md-2 px-0 technical">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <span>Characteristics & <br> Techniques</span>
                 </div>
             </div>
             
-
-            <div class="row mx-0 row3">
-                <div class="col-12 mx-auto d-flex flex-wrap justify-content-center px-0 mx-auto overflow-hidden row3-1">
-                    <div class="col-12 border-0">
-                        <h2 class="text-white pb-3 row3-heading">OUR PRODUCTS</h2>
-                    </div>
-                    <div class="col-12 col-lg-6 row3-1-2">
-                        <div>
-                            <h3 class="text-center my-4 h4">AHMAD TEA COLLECTIONS</h3>
-                            <p class="text-center mb-4">From our classic black blends and much-loved bestsellers, to balanced infusions and delicious cold brews, there is a cup of Ahmad Tea to suit everyone, any time of the day. Explore our ranges.</p>
-                            <a href="#" class="d-block mx-auto mt-5 btn2 btn2-1">VIEW ALL</a>
+            <div class="col-12 order-3 px-0 mx-auto overflow-hidden slider-container">
+                <div class="col-12 d-flex px-0 slider">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/coding.jpg" class="w-100 slider-img">
+                        <div class="p-3 slider-description">
+                            <h5>Regular Coding</h5>
+                            <p>It is a good practice to assign a couple of hours for coding everyday, as every thing is possible with order, hardworking and persistance.</p>
                         </div>
                     </div>
-
-                    <div class="col-12 d-lg-none d-flex flex-nowrap slider1-container">
-                        <div class=" col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100 slider1-img" loading="lazy" src="images/3.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes"><a href="#"><h3>BLACK TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative ">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/4.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>GREEN TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/5.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>COLD BREW TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/6.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>FRUIT TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/7.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>FRUIT & HERBAL INFUSIONS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/8.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>NATURAL BENEFITS</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/9.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>KEW BEYOND THE LEAF RANGE</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/10.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>DECAF RANGE</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/11.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>GALERIE DU THÉ</h3></a><a href="#">VIEW ALL</a></div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 position-relative">
-                            <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/12.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                            <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>TEA GIFTS</h3></a><a href="#">VIEW ALL</a></div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/problem-solving.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Problem Solving</h5>
+                            <p>Logical thinking ability and problem solving attitude, somehow has a root in subconscious, which is regarded as a prerequisite of a good programmer.</p>
                         </div>
                     </div>
-                    <div class=" col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100 slider1" loading="lazy" src="images/3.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes"><a href="#"><h3>BLACK TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative ">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100 slider1" loading="lazy" src="images/4.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>GREEN TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/5.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>COLD BREW TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/6.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>FRUIT TEAS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/7.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>FRUIT & HERBAL INFUSIONS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/8.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>NATURAL BENEFITS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/9.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>KEW BEYOND THE LEAF RANGE</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/10.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>DECAF RANGE</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/11.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>GALERIE DU THÉ</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 d-none d-lg-block position-relative">
-                        <a href="#" class="zoom" title="VIEW ALL"><img class="w-100" loading="lazy" src="images/12.webp" alt="VIEW ALL" title="VIEW ALL"></a>
-                        <div class="position-absolute top-0 row3-boxes" ><a href="#"><h3>TEA GIFTS</h3></a><a href="#">VIEW ALL</a></div>
-                    </div>
-                        <i class="bi bi-arrow-left fs-1 d-lg-none mt-3 me-2 px-2 slider1-previous slider1-icon"></i>
-                        <i class="bi bi-arrow-right fs-1 d-lg-none mt-3 ms-2 px-2 slider1-next slider1-icon"></i>
-                    
-                </div>
-            </div>
-
-            <div class="row mx-0 row4">
-                <div class="col-12 mx-auto px-3">
-                    <p class="mb-0">Early in the life of Ahmad Tea, our Chairman, Mr Rahim Afshar, promised, “I will not sell anything that I would not drink at home.”</p>
-                </div>
-            </div>
-
-            <div class="row mx-0 row5">
-                <div class="col-12 mx-auto px-3 row5-1">
-                    <h2 class="text-white mb-4">DISCOVER AHMAD TEA</h2>
-                </div>
-                <div class="col-12 mx-auto px-3 d-flex flex-wrap row5-2">
-                    <div class="col-12 col-md-8 order-0 row5-col8">
-                        <a href="#" class="zoom"><img class="w-100" src="images/13.webp" loading="lazy" alt="INSPIRING THE LOVE OF TEA" title="INSPIRING THE LOVE OF TEA"></a>
-                        <div class="bg-white p-4">
-                            <h6 class="mb-2">READ THE AHMAD TEA STORY</h6>
-                            <h3 class="mb-3">INSPIRING THE LOVE OF TEA</h3>
-                            <p class="mb-3">We are a family run company founded on a passion for tea. Our Chairman Mr Rahim made a promise to never sell tea he wouldn’t drink at home. Learn how we stay true to those values in everything we do.</p>
-                            <a href="#" class="d-inline-block btn1">LEARN MORE</a>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/creativity.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Creativity</h5>
+                            <p>The colorful world always introduce different ways. so this is not a good idea to stick a specific method and close our eyes to other alternatives.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 position-relative order-1 row5-col4 row5-col4-1">
-                        <div class="green-over"></div>
-                        <div class="d-flex flex-column justify-content-center row5-col4-description">
-                            <h3 class="text-white text-center">FOLLOW US!</h3>
-                            <ul class="d-flex justify-content-center px-0">
-                                <li><a href="#" class="px-3 d-flex flex-column icon-hover">
-                                    <i class="bi text-white fs-3 bi-instagram"></i><i class="bi fs-3 bi-instagram icon-hover2"></i></a>
-                                </li>
-                                <li><a href="#" class="px-3 d-flex flex-column icon-hover">
-                                    <i class="bi text-white fs-3 bi-facebook"></i><i class="bi fs-3 bi-facebook icon-hover2"></i></a>
-                                </li>
-                                <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-twitter "></i><i class="bi fs-3 bi-twitter icon-hover2"></i></a></li>
-                                <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-youtube "></i><i class="bi fs-3 bi-twitter icon-hover2"></i></a></li>
-                            </ul>
+                     <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/learning.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Desire To Learn</h5>
+                            <p>Due the fast growing technology, good web developers broaden the mind with continuous learning and search throught the web to utilize the best option.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 position-relative order-3 order-md-2 row5-col4 row5-col4-2">
-                        <div class="green-over"></div>
-                        <div class="d-flex flex-column justify-content-center row5-col4-description">
-                            <h3 class="text-white text-center ">LATEST RECIPE</h3>
-                            <p class="text-white text-center">Cardamom Orange Pistachio Muffins</p>
-                            <a href="#" class="d-block mx-auto btn3">READ MORE</a>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/confidence.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Self Confidence</h5>
+                            <p>Team members have to be confident enough to undertake responsibilities based on their capabilities and skills, and work independently as far as possible.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 order-2 order-md-3 row5-col8">
-                        <a href="#" class="zoom"><img class="w-100" src="images/16.webp" loading="lazy" alt="COMMITED TO COMMUNITY" title="COMMITED TO COMMUNITY"></a>
-                        <div class="bg-white p-4">
-                            <h6 class="mb-2">ACTS OF KINDNESS</h6>
-                            <h3 class="mb-3">COMMITTED TO COMMUNITY</h3>
-                            <p class="mb-3">Kindness is the foundation of our business. We undertake projects to give back to the people and the communities who need it most. So, in a small way, every cup of Ahmad Tea makes the world a better place.</p>
-                            <a href="#" class="d-inline-block btn1">LEARN MORE</a>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/communication.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Communication Skills</h5>
+                            <p>As usually teams work on projects, communication is of great importance in different aspects of listening, writing, reading ans speaking clearly, concisely and correctly with courtesy.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 order-4 row5-col8">
-                        <a href="#" class="zoom"><img class="w-100" src="images/17.webp" loading="lazy" alt="THE TEA JOURNEY" title="THE TEA JOURNEY"></a>
-                        <div class="bg-white p-4">
-                            <h6 class="mb-2">FROM CROP TO CUP</h6>
-                            <h3 class="mb-3">THE TEA JOURNEY</h3>
-                            <p class="mb-3">From crop to cup, our tea undergoes a long, fascinating journey to ensure that every sip bears the Ahmad Tea hallmarks of quality, care and craft. Discover more about our process.</p>
-                            <a href="#" class="d-inline-block btn1">LEARN MORE</a>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/details.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Details are Important</h5>
+                            <p>Detailes UI design and accurate project execution leads to better user experience. even if parts of website are out of sight or invisible.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 position-relative order-5 row5-col4 row5-col4-3">
-                        <div class="green-over"></div>
-                        <div class="d-flex flex-column justify-content-center row5-col4-description">
-                            <h3 class="text-white text-center">THE WALL OF TEA <br> #AHMADTEA</h3>
-                            <a href="#" class="d-block mx-auto btn3">VIEW MORE</a>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mx-auto row6">
-                <div class="col-12 d-flex justify-content-between row6-1">
-                    <h2>AHMAD TEA JOURNAL</h2>
-                    <div class="d-flex justify-content-center">
-                        <i class="bi bi-arrow-left fs-1 px-2 slider2-previous notActive"></i>
-                        <i class="bi bi-arrow-right fs-1 px-2 slider2-next active"></i>
-                    </div>
-                </div>
-                <div class="col-12 mx-auto px-0 row6-2">
-                    <div class="col-12 d-flex slider2-container">
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/19.webp" loading="lazy" class="w-100 row6-img" alt="WORLD WATER WEEK"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">World Water Week: The Power of Clean Water</h3></a>
-                                <p>In World Water Week we celebrate the power of clean water and our 10 year commitment to our project with Oxfam.</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>24.08.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/20.webp" loading="lazy" class="w-100" alt="ALICE KINSELLA"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">Alice Kinsella on her Commonwealth success</h3></a>
-                                <p>Talking to brand ambassador, Alice Kinsella, about her Commonwealth Games and European Championships successes.</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>17.08.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/21.webp" loading="lazy" class="w-100" alt="AHMAD TEA WINS 18 STARS"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">Ahmad Tea wins 18 stars at Great Taste 2022</h3></a>
-                                <p>Among 18 stars at Great Taste 2022, Galerie du Thé’s Luyeh Red tea was awarded a rare 3 stars for its “extraordinary” taste.</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>01.08.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/22.webp" class="w-100" alt="A BEGINNERS GUIDE"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">A Beginner’s Guide to Loose Tea</h3></a>
-                                <p>If you are a loose leaf tea novice then let us help guide you through the wonderful world of loose tea, in our beginner's guide.</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>25.07.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/23.webp" loading="lazy" class="w-100" alt="AHMAAD TEA SUSTAINABILITY REPORT"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">Ahmad Tea Sustainability Report 2021/2022</h3></a>
-                                <p>We are proud to publish the Ahmad Tea Sustainability Report for 2021/22 - a summary of the achievements by our company in the last 18…</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>01.06.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 row6-2boxes">
-                            <a href="#" class="zoom"><img src="images/24.webp" loading="lazy" class="w-100" alt="AHMAD TEA WINS GOLD AT ECOVADIS"></a>
-                            <div class="row6-2description">
-                                <a href="#"><h3 class="mb-3">Ahmad Tea wins gold at EcoVadis</h3></a>
-                                <p>We are celebrating our global processing and distribution plant in UAE winning a gold award from EcoVadis. The EcoVadis rating analyses a company’s environmental, labour…</p>
-                                <div class="d-flex justify-content-between">
-                                    <span>10.05.22</span>
-                                    <a href="#"><span>CONTINUE READING</span></a>
-                                </div>
-                            </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/readable.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Clean Code</h5>
+                            <p>It is a matter of fact, not opinion that an excellent programmer always think about code readability as well as performance to make codes easier for modification</p>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-end py-4 mb-5 row6-3"><a href="#" class="me-1 btn1">VIEW ALL</a></div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <img src="images/optimization.jpg" class="w-100">
+                        <div class="p-3 slider-description">
+                            <h5>Optimization</h5>
+                            <p>projects must be optimized based on time, cost, page loading speed, SEO, mobile usability and so on which leads businesses to success. </p>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-        <div class="fixed-element hide-fixed-element"><a href="#"><i class="bi bi-caret-up-fill"></i></a></div>
-    </div>
+        <ul class="d-flex px-0 my-2 justify-content-center slider-control">
+            <li class="slider-control-items"><i class="slider-i bi bi-circle-fill"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items d-lg-none"><i class="slider-i bi bi-circle"></i></li>
+            <li class="slider-control-items d-sm-none"><i class="slider-i bi bi-circle"></i></li>
+        </ul>
 
-    <div class="row mx-0 footer">
-        <div class="col-12 d-flex flex-column align-items-center flex-md-row justify-content-md-between mx-auto pt-5 pb-4 footer-1">
-            <a href="#" class="logo-footer"><img class="w-100" loading="lazy" src="images/logo.png" alt="LOGO"></a>
-            <div>
-                <ul class="d-flex justify-content-center icon-footer mt-3 px-0">
-                    <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-facebook"></i><i class="bi fs-3 bi-facebook icon-hover2"></i></a></li>
-                    <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-instagram"></i><i class="bi fs-3 bi-instagram icon-hover2"></i></a></li>
-                    <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-twitter "></i><i class="bi fs-3 bi-twitter icon-hover2"></i></a></li>
-                    <li><a href="#" class="px-3 d-flex flex-column icon-hover"><i class="bi text-white fs-3 bi-youtube "></i><i class="bi fs-3 bi-twitter icon-hover2"></i></a></li>
-                </ul>
-                <div>
-                    <a href="#"><img src="images/25.png" loading="lazy" alt="ETHICAL TEA"></a>
-                    <a href="#"><img src="images/26.png" loading="lazy" alt="UKTEA"></a>
+        <div class="row mx-auto skills" id="skills">
+            <div class="col-12"><h2 class="fw-bold"><span class="text-danger">S</span>kills:</h2></div>
+            <div class="col-12 d-flex flex-wrap skills-completed">
+                <div class="col-12 col-md-6 py-3"><h4>html</h4><div class="d-flex progress-bar"><div class="html">90%</div></div></div>
+                <div class="col-12 col-md-6 py-3"><h4>css</h4><div class="progress-bar"><div class="css">90%</div></div></div>
+                <div class="col-12 col-md-6 py-3"><h4>Bootstrap</h4><div class="progress-bar"><div class="bootstrap">85%</div></div></div>
+                <div class="col-12 col-md-6 py-3"><h4>less & sass</h4><div class="progress-bar"><div class="less">95%</div></div></div>
+                <div class="col-12 col-md-6 py-3"><h4>JavaScript</h4><div class="progress-bar"><div class="javascript">75%</div></div></div>
+                <div class="col-12 col-md-6 py-3"><h4>jQuery</h4><div class="progress-bar"><div class="jQuery">75%</div></div></div>
+            </div>
+            <div class="col-12 d-flex flex-wrap my-3 skills-to-do">
+                <div class="col-12"><h3 class="fw-bold">To Do List:</h3></div>
+                <div class="col-12 col-md-4 py-3"><h4>React</h4><div class="progress-bar"><div class="progress-todo"></div></div></div>
+                <div class="col-12 col-md-4 py-3"><h4>UI/UX</h4><div class="progress-bar"><div class="progress-todo"></div></div ></div>
+                <div class="col-12 col-md-4 py-3"><h4>SEO</h4><div class="progress-bar"><div class="progress-todo"></div></div></div>
+            </div>
+        </div>
+        <div class="row mx-auto services" id="services">
+            <div class="col-12 pb-5">
+                <h2 class="fw-bold"><span class="text-warning">S</span>ervices</h2>
+            </div>
+            <div class="col-12 col-sm-6 mb-5 overflow-hidden">
+                <div class="design services-icon" id="design"></div>
+                <h5 class="text-center my-3">Web Design</h5> 
+                <p class="text-center px-5 px-sm-3 px-lg-5">After setting goals for website creation, we work on content management and layout design. In addition to aesthetics, we care about different media sizes to show contents clearly and thoroughly.</p> 
+            </div>
+            <div class="col-12 col-sm-6 mb-5 overflow-hidden">
+                <div class="development services-icon" id="development"></div>
+                <h5 class="text-center my-3">Web development</h5> 
+                <p class="text-center px-5 px-sm-3 px-lg-5">Web development starts after design review and finalization. It consists of coding and testing until the project is completed. Also we select desirable frameworks to reach the goals according to plan.</p> 
+            </div>
+            <div class="col-12 col-sm-6 mb-5 overflow-hidden" id="optimization">
+                <div class="optimization services-icon" ></div>
+                <h5 class="text-center my-3">Website Optimization</h5>
+                <p class="text-center px-5 px-sm-3 px-lg-5">The objective of any website is to get higher SEO rank which is usually synonym of page speed. We can optimize page speed by lower image sizes, using CDN, minimizing the number of JS and CSS files and so on.</p> 
+            </div>
+            <div class="col-12 col-sm-6 mb-5 overflow-hidden">
+                <div class="repair services-icon" id="repair"></div>
+                <h5 class="text-center my-3">Website Repair</h5>
+                <p class="text-center px-5 px-sm-3 px-lg-5">Some times there is a need to modify existing website due to non-standard or non-optimized design, coding, structure, deprecated tags or attributes and old frameworks which is better to be changed. </p>
+            </div>
+        </div>
+        <div class="row mx-auto projects" id="projects">
+            <div class="col-12 pb-5">
+                <h2 class="fw-bold"><span class="text-success">P</span>rojects</h2>
+            </div>
+            <div class="offset-1 col-10 col-md-5">
+                <div class="d-flex flex-column align-items-center projects-items">
+                    <h5 class="py-4">Non Responsive Pages</h5>
+                    <div class="d-flex justify-content-between html-css">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="p-3 my-3">This project focuses mainly on html 5 and css 3 which have been educated in the course of web design1. This is my first job as frontend developer, so there are a couple of non-standards codes and conflicts.</p>
+                    <div class="p-3">
+                        <ul class="d-flex px-0">
+                            <li class="mx-2"><a href="pages/project1.html">page 1</a></li>
+                            <li class="mx-2"><a href="pages/pegahStory.html">page 2</a></li>
+                            <li class="mx-2"><a href="pages/pegahTasty.html">page 3</a></li>
+                            <li class="mx-2"><a href="pages/news.html">page 4</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="my-3 btn1 btn-footer">SHOP NOW</a>
+            <div class="offset-1 offset-md-0 col-10 col-md-5">
+                <div class="d-flex flex-column align-items-center projects-items">
+                    <h5 class="py-4">Responsive Pages</h5>
+                    <div class="d-flex justify-content-between boot-sass">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="p-3 my-3">This project is done as a final work for the course of web design 2. Using bootstrap 5 , media queries and advanced css styles, responsive pages have been created both on right to left and left to right directions. </p>
+                    <div class="p-3">
+                        <ul class="d-flex px-0">
+                            <li class="mx-2"><a href="pages/project2.html">ltr</a></li>
+                            <li class="mx-2"><a href="pages/project2rtl.html">rtl</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-10 col-md-5">
+                <div class="d-flex flex-column align-items-center projects-items">
+                    <h5 class="py-4">Interactive Page</h5>
+                    <div class="d-flex justify-content-between js-jquery">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="p-3 my-3">This is the final project for web design 3 related to the overall use of html, css, bootstrap, sass and javascript. The ultimum score was based on GTmetix rank for page speed which is 93% against original website 77%.</p>
+                    <div class="p-3">
+                        <ul class="d-flex px-0">
+                            <li class="mx-2"><a href="pages/project3.html">Final Project</a></li>
+                            <li class="mx-2"><a href="https://www.ahmadtea.com/" >Original Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-1 col-10 offset-md-0 col-md-5">
+                <div class="d-flex flex-column align-items-center projects-items">
+                    <h5 class="py-4">Portfolio</h5>
+                    <div class="d-flex justify-content-between my-portfolio">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="p-3 my-3">I have created this page as a challenge of having personal portfolio which has been designed and developed independently by myself to show off my capabilities and skills to potential employers and corporations.</p>
+                    <div class="p-3">
+                        <ul class="d-flex px-0">
+                            <li class="mx-2"><a href="index.html">Portfolio Page</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
         </div>
-        <div class="col-12 mx-auto menu-footer">
-            <ul class="d-flex flex-column flex-md-row justify-content-md-between mx-auto align-items-center ps-0 my-4">
-                <li><a href="#">OUR STORY</a></li>
-                <li><a href="#">SELECT COUNTRY</a></li>
-                <li><a href="#">PRIVACY POLICY</a></li>
-                <li><a href="#">COOKIES</a></li>
-                <li><a href="#">MODERN SLAVERY STATEMENT</a></li>
-                <li><a href="#">SITEMAP</a></li>
-            </ul>
+        <h2 class="mx-auto px-4" id="contact"></h2>
+        <div class="row mx-0 footer">
+            <div class="col-12 d-flex flex-wrap mx-auto contact">
+                <div class="col-12 col-lg-4 mb-3">
+                    <h5 class="text-center mb-3 contact-me"><span class="border-bottom border-1 border-dark">Contact Me</span></h5>
+                    <ul class="d-flex justify-content-center px-0 mx-auto contact-list">
+                        <li><a href="https://www.linkedin.com/in/farhad-nazari-74943b250" class="linkedin" title="Linkedin"><i class="bi text-dark bi-linkedin"></i></a></li>
+                        <li><a href="#" class="facebook" title="Facebook"><i class="bi text-dark bi-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com/farhaad.nzr" class="instagram" title="Instagram"><i class="bi text-dark bi-instagram"></i></a></li>
+                        <li><a href="https://wa.me/989125072577" class="whatsapp" title="whatsApp"><i class="bi text-dark bi-whatsapp"></i></a></li>
+                        <li><a href="https://t.me/FarhaadNazari" class="telegram" title="Telegram"><i class="bi text-dark bi-telegram"></i></a></li>
+                        <li><a href="##" class="email" title="email"><i class="bi text-dark bi-envelope"></i></a>
+                            <div class="email-div-container">
+                                <div class="email-div">
+                                    <i class="bi bi-x-lg email-close"></i>
+                                    <h3 class="text-white px-3 pt-5">email address:</h3>
+                                    <a href="mailto:farhaad.nzr@gmail.com" class="button py-2">farhaad.nzr@gmail.com</a>
+                                    <h3 class="text-white px-3 pt-4">Linkedin:</h3>
+                                    <a href="https://www.linkedin.com/in/farhad-nazari-74943b250" class="button py-2 mb-3">See What's New on Linkedin</a>
+                                    <h3 class="text-white px-3 pt-4">WhatsApp:</h3>
+                                    <a href="https://wa.me/989125072577" class="button py-2">Text Me on WhatsApp </a>
+                                    <h3 class="text-white px-3 pt-4">Telegram:</h3>
+                                    <a href="https://t.me/FarhaadNazari" class="button py-2">Contact Me with Telegram</a>
+                                    <h3 class="text-white px-3 pt-4">instagram:</h3>
+                                    <a href="http://www.instagram.com/farhaad.nzr" class="button py-2">Visit My Instagram</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d51821.30520603203!2d51.336370237793055!3d35.730360478764865!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1662794245774!5m2!1sen!2sus" class="d-block rounded-1 mx-auto" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6 offset-3 col-sm-5 offset-sm-1 offset-md-1 col-md-4 col-lg-3 mb-3">
+                    <h5 class="text-center mb-3"><span class="border-bottom border-1 border-dark">Offered Services</span></h5>
+                    <ul class="d-flex flex-column text-center mt-4 px-0 offered-services">
+                        <li class="mb-3"><a href="#design" class="py-2 text-dark">Web Design</a></li>
+                        <li class="mb-3"><a href="#development" class="py-2 text-dark">Web Development</a></li>
+                        <li class="mb-3"><a href="#optimization" class="py-2 text-dark">Website Optimization</a></li>
+                        <li class="mb-3"><a href="#repair" class="py-2 text-dark">Website Repair</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 offset-3 col-sm-5 offset-sm-1 offset-md-2 col-md-4 col-lg-3 offset-lg-1 mb-3">
+                    <h5 class="text-center mb-3"><span class="border-bottom border-1 border-dark">Useful Links</span></h5>
+                    <ul class="d-flex flex-column text-center mt-4 px-0 useful-links">
+                        <li class="mb-3"><a href="#" class="py-2 text-dark">Home</a></li>
+                        <li class="mb-3"><a href="#aboutme" class="py-2 text-dark">About Me</a></li>
+                        <li class="mb-3"><a href="#skills" class="py-2 text-dark">Skills</a></li>
+                        <li class="mb-3"><a href="#projects" class="py-2 text-dark">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="js/index.js"></script>
 </body>
 </html>
