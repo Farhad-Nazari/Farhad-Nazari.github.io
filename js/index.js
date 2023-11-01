@@ -3,10 +3,10 @@ const icon = document.querySelector(".icon");
 const nav = document.querySelector(".navigation");
 const mobileMenu = document.querySelector(".mobile-menu");
 const li = document.querySelectorAll(".navigation-li");
-const lang = document.querySelector(".lang");
-const fa = document.querySelector(".fa");
-const en = document.querySelector(".EN");
-const faMobile = document.querySelector(".fa-mobile");
+// const lang = document.querySelector(".lang");
+// const fa = document.querySelector(".fa");
+// const en = document.querySelector(".EN");
+// const faMobile = document.querySelector(".fa-mobile");
 
 icon.addEventListener("click",function() {
     nav.classList.toggle("shownav");
@@ -27,12 +27,12 @@ for (let i=0;i<=5;i++) {
     });
 }
 
-lang.addEventListener("click",function(){
-    fa.classList.toggle("hide");
-});
-en.addEventListener("click",function(){
-    faMobile.classList.toggle("hide");
-});
+// lang.addEventListener("click",function(){
+//     fa.classList.toggle("hide");
+// });
+// en.addEventListener("click",function(){
+//     faMobile.classList.toggle("hide");
+// });
 
 /* End of  Navigation */
 
@@ -150,45 +150,24 @@ document.addEventListener(("scroll"),function(){
         count=1;
         setInterval(function(){
             percent++;
-            if (percent>90) {
+            if (percent>100) {
                 clearInterval;
             }
             else {
                 html.style.width=`${percent}%`;
+                html.textContent=`${percent}%`;
                 css.style.width=`${percent}%`;
-            }
-        },50);
-
-        setInterval(function(){
-            percent++;
-            if (percent>85) {
-                clearInterval;
-            }
-            else {
+                css.textContent=`${percent}%`;
                 bootstrap.style.width=`${percent}%`;
-            }
-        },50);
-
-        setInterval(function(){
-            percent++;
-            if (percent>85) {
-                clearInterval;
-            }
-            else {
+                bootstrap.textContent=`${percent}%`;
                 less.style.width=`${percent}%`;
-            }
-        },50);
-
-        setInterval(function(){
-            percent++;
-            if (percent>75) {
-                clearInterval;
-            }
-            else {
+                less.textContent=`${percent}%`;
                 js.style.width=`${percent}%`;
+                js.textContent=`${percent}%`;
                 jQ.style.width=`${percent}%`;
+                jQ.textContent=`${percent}%`;
             }
-        },60)
+        },20);
     }
     
     let y=service.offsetTop;
