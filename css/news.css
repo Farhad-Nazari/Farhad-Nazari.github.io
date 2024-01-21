@@ -21,6 +21,9 @@
     outline: 0;
     direction: rtl;
 }
+body {
+    width: 1315px;
+}
 /* header */
 #box1 {
     width: 100%;
