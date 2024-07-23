@@ -132,12 +132,16 @@ setInterval(function(){
 /* end of slider */
 
 const skills = document.querySelector("#skills");
-const html = document.querySelector(".html");
-const css = document.querySelector(".css");
-const bootstrap = document.querySelector(".bootstrap");
-const less = document.querySelector(".less");
-const js = document.querySelector(".javascript");
-const jQ = document.querySelector(".jQuery");
+const htmlCss = document.querySelector(".htmlCss");
+const bootstrapLessSass = document.querySelector(".Bootstrap-less-sass");
+const TailwindCSS = document.querySelector(".TailwindCSS");
+const jsJquery = document.querySelector(".JavaScript-jQuery");
+const reactRedux = document.querySelector(".React-Redux");
+const wp = document.querySelector(".Wordpress-Woocommerce");
+const seo = document.querySelector(".SEO");
+const uiux = document.querySelector(".UI-UX");
+const php = document.querySelector(".php");
+const mysql = document.querySelector(".mysql");
 const service = document.querySelector("#services");
 const services = document.querySelectorAll(".services-icon");
 let count=0;
@@ -151,21 +155,29 @@ document.addEventListener(("scroll"),function(){
         setInterval(function(){
             percent++;
             if (percent>100) {
-                clearInterval;
+                clearInterval();
             }
             else {
-                html.style.width=`${percent}%`;
-                html.textContent=`${percent}%`;
-                css.style.width=`${percent}%`;
-                css.textContent=`${percent}%`;
-                bootstrap.style.width=`${percent}%`;
-                bootstrap.textContent=`${percent}%`;
-                less.style.width=`${percent}%`;
-                less.textContent=`${percent}%`;
-                js.style.width=`${percent}%`;
-                js.textContent=`${percent}%`;
-                jQ.style.width=`${percent}%`;
-                jQ.textContent=`${percent}%`;
+                htmlCss.style.width=`${percent}%`;
+                htmlCss.textContent=`${percent}%`;
+                bootstrapLessSass.style.width=`${percent}%`;
+                bootstrapLessSass.textContent=`${percent}%`;
+                TailwindCSS.style.width=`${percent}%`;
+                TailwindCSS.textContent=`${percent}%`;
+                jsJquery.style.width=`${percent}%`;
+                jsJquery.textContent=`${percent}%`;
+                reactRedux.style.width=`${percent}%`;
+                reactRedux.textContent=`${percent}%`;
+                wp.style.width=`${percent}%`;
+                wp.textContent=`${percent}%`;
+                seo.style.width=`${percent}%`;
+                seo.textContent=`${percent}%`;
+                uiux.style.width=`${percent}%`;
+                uiux.textContent=`${percent}%`;
+                php.style.width=`${percent}%`;
+                php.textContent=`${percent}%`;
+                mysql.style.width=`${percent}%`;
+                mysql.textContent=`${percent}%`;
             }
         },20);
     }

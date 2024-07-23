@@ -644,6 +644,68 @@
   background: url("../images/long-shadow-web-icons.jpg") -10px -370px;
 }
 
+.react-tailwind :first-child {
+  background: url("../images/React_Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.react-tailwind :last-child {
+  background: url("../images/Tailwind_CSS_Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100px;
+  height: 100px;
+}
+.uiux :first-child {
+  background: url("../images/figma-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.uiux :last-child {
+  background: url("../images/ux.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.wp-woo :first-child {
+  background: url("../images/Wordpress_Blue_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.wp-woo :last-child {
+  background: url("../images/WooCommerce_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100px;
+  height: 100px;
+}
+.seo :first-child {
+  background: url("../images/seo.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  width: 150px;
+  height: 100px;
+}
+.seo :last-child {
+  background: url("../images/Digital_Marketing_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
 .my-portfolio :first-child {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/portfolio.jpg");
   background-size: contain;
@@ -657,7 +719,11 @@
 .html-css,
 .boot-sass,
 .js-jquery,
-.my-portfolio {
+.my-portfolio,
+.react-tailwind,
+.uiux,
+.wp-woo,
+.seo {
   width: 220px;
   height: 100px;
   cursor: pointer;
@@ -666,7 +732,11 @@
 .html-css :first-child,
 .boot-sass :first-child,
 .js-jquery :first-child,
-.my-portfolio :first-child {
+.my-portfolio :first-child,
+.react-tailwind :first-child,
+.uiux :first-child,
+.wp-woo :first-child,
+.seo :first-child {
   width: 100px;
   height: 100px;
   transform-origin: bottom left;
@@ -677,7 +747,11 @@
 .html-css :last-child,
 .boot-sass :last-child,
 .js-jquery :last-child,
-.my-portfolio :last-child {
+.my-portfolio :last-child,
+.react-tailwind :last-child,
+.uiux :last-child,
+.wp-woo :last-child,
+.seo :last-child {
   width: 100px;
   height: 100px;
   transform-origin: bottom right;
@@ -688,15 +762,23 @@
 .html-css:hover :first-child,
 .boot-sass:hover :first-child,
 .js-jquery:hover :first-child,
-.my-portfolio:hover :first-child {
-  transform: rotateZ(-5deg);
+.my-portfolio:hover :first-child,
+.react-tailwind:hover :first-child,
+.uiux:hover :first-child,
+.wp-woo:hover :first-child,
+.seo:hover :first-child {
+  transform: rotateZ(-10deg);
 }
 
 .html-css:hover :last-child,
 .boot-sass:hover :last-child,
 .js-jquery:hover :last-child,
-.my-portfolio:hover :last-child {
-  transform: rotateZ(5deg);
+.my-portfolio:hover :last-child,
+.react-tailwind:hover :last-child,
+.uiux:hover :last-child,
+.wp-woo:hover :last-child,
+.seo:hover :last-child {
+  transform: rotateZ(10deg);
 }
 
 .projects-items {
