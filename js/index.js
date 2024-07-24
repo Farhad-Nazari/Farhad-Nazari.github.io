@@ -183,7 +183,7 @@ document.addEventListener(("scroll"),function(){
     }
     
     let y=service.offsetTop;
-    if (sizeOfScroll>y-100) {
+    if (sizeOfScroll>y-200) {
         for (let i=0;i<4;i++) {
             services[i].style.transform="translateX(0)";
         }
