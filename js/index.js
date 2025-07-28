@@ -3,10 +3,6 @@ const icon = document.querySelector(".icon");
 const nav = document.querySelector(".navigation");
 const mobileMenu = document.querySelector(".mobile-menu");
 const li = document.querySelectorAll(".navigation-li");
-// const lang = document.querySelector(".lang");
-// const fa = document.querySelector(".fa");
-// const en = document.querySelector(".EN");
-// const faMobile = document.querySelector(".fa-mobile");
 
 icon.addEventListener("click",function() {
     nav.classList.toggle("shownav");
@@ -27,12 +23,6 @@ for (let i=0;i<=5;i++) {
     });
 }
 
-// lang.addEventListener("click",function(){
-//     fa.classList.toggle("hide");
-// });
-// en.addEventListener("click",function(){
-//     faMobile.classList.toggle("hide");
-// });
 
 /* End of  Navigation */
 
@@ -137,6 +127,7 @@ const bootstrapLessSass = document.querySelector(".Bootstrap-less-sass");
 const TailwindCSS = document.querySelector(".TailwindCSS");
 const jsJquery = document.querySelector(".JavaScript-jQuery");
 const reactRedux = document.querySelector(".React-Redux");
+const nextjs = document.querySelector(".next");
 const wp = document.querySelector(".Wordpress-Woocommerce");
 const seo = document.querySelector(".SEO");
 const uiux = document.querySelector(".UI-UX");
@@ -159,25 +150,15 @@ document.addEventListener(("scroll"),function(){
             }
             else {
                 htmlCss.style.width=`${percent}%`;
-                htmlCss.textContent=`${percent}%`;
                 bootstrapLessSass.style.width=`${percent}%`;
-                bootstrapLessSass.textContent=`${percent}%`;
                 TailwindCSS.style.width=`${percent}%`;
-                TailwindCSS.textContent=`${percent}%`;
                 jsJquery.style.width=`${percent}%`;
-                jsJquery.textContent=`${percent}%`;
                 reactRedux.style.width=`${percent}%`;
-                reactRedux.textContent=`${percent}%`;
+                nextjs.style.width=`${percent}%`;
                 wp.style.width=`${percent}%`;
-                wp.textContent=`${percent}%`;
                 seo.style.width=`${percent}%`;
-                seo.textContent=`${percent}%`;
                 uiux.style.width=`${percent}%`;
-                uiux.textContent=`${percent}%`;
-                php.style.width=`${percent}%`;
-                php.textContent=`${percent}%`;
-                mysql.style.width=`${percent}%`;
-                mysql.textContent=`${percent}%`;
+                php.style.width=`${percent}%`;                
             }
         },20);
     }
