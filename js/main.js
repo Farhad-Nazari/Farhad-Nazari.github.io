@@ -3,6 +3,7 @@ const icon = document.querySelector(".icon");
 const nav = document.querySelector(".navigation");
 const li = document.querySelectorAll(".navigation-li");
 
+
 icon.addEventListener("click",function() {
     nav.classList.toggle("shownav");
     icon.classList.toggle("bi-list");
