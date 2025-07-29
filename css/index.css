@@ -1,292 +1,119 @@
-@media all and (max-width: 575px) {
-  .mobile-menu {
-    width: 100%;
-    z-index: 9;
+@media all and (max-width: 575.98px) {
+  .header {
+    height: 40px;
   }
+
   .navigation {
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    background-color: #062f6a;
+    padding-top: 40px;
+    background-color: #3b3b3b;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    transform: scale(0);
-    transform-origin: top left;
+    transform: scaleX(0);
+    transform-origin: right;
     overflow: auto;
+    transition: all linear 300ms;
+    z-index: 10;
   }
+
   .navigation li {
+    height: 40px;
     width: 100%;
-    margin: 10px 0px;
     text-align: center;
   }
+
   .navigation a {
+    line-height: 40px;
     color: #aaa;
     transition: all 300ms linear;
   }
+
   .navigation a:hover {
     color: #fff;
   }
-  .EN {
-    line-height: 60px;
-    color: #555;
-    cursor: pointer;
-  }
+
   .shownav {
-    transform: scale(1);
-    padding-top: 70px;
+    transform: scaleX(1);
   }
-  .hide {
-    display: none;
-  }
-  .icon-2 {
-    color: #aaa !important;
-  }
-  .icon-2:hover {
-    color: #fff !important;
-  }
-  .mobile-2 {
-    background-color: #062f6a;
-    transition: all 500ms ease-in 1s;
-  }
+
+
   /* End Of header   ---------------------------------------------------------------------------------------------------------------------------------*/
+  .home {
+    margin-top: 40px;
+    height: 200px;
+  }
+
   .home-1 {
-    padding: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #eee;
-    text-shadow: 3px 3px 20px #222,-3px -3px 20px #222;
+    text-shadow: 3px 3px 20px #222, -3px -3px 20px #222;
   }
-  .home-2 a {
-    padding: 20px 0px;
+  .home-1 h1 {
+    font-size: 18px;
   }
+  .home-1 h2 {
+    font-size: 16px;
+  }
+
+  .home-2 {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+
   .home-2 img {
-    border-radius: 10px;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
     box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
-    padding: 10px;
   }
+
   .description,
   .technical {
     height: 250px;
   }
+
   .description div {
     padding: 4vw 4vw;
   }
+
   .description p {
     font-size: calc(10px + 1.5vw);
     text-align: justify;
   }
-  /* .slider-description {
-    height: 150px;
-  } */
-  /* .slider-description p {
-    font-size: calc(10px + 1vw);
-  } */
+
   .contact-list a {
     font-size: 20px;
   }
+
   .email-div {
     width: 100%;
   }
 }
 
-@media all and (min-width: 576px) and (max-width: 767px) {
-  .mobile-menu {
-    width: 100%;
-    z-index: 9;
-  }
-  .navigation {
-    width: 100%;
-    height: 100vh;
-    background-color: #062f6a;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scale(0);
-    transform-origin: top left;
-    overflow: auto;
-  }
-  .navigation li {
-    width: 100%;
-    margin: 10px 0px;
-    text-align: center;
-  }
-  .navigation a {
-    color: #aaa;
-    transition: all 300ms linear;
-  }
-  .navigation a:hover {
-    color: #fff;
-  }
-  .EN {
-    line-height: 60px;
-    color: #555;
-    cursor: pointer;
-  }
-  .shownav {
-    transform: scale(1);
-    padding-top: 70px;
-  }
-  .hide {
-    display: none;
-  }
-  .icon-2 {
-    color: #aaa !important;
-  }
-  .icon-2:hover {
-    color: #fff !important;
-  }
-  .mobile-2 {
-    background-color: #062f6a;
-    transition: all 500ms ease-in 1s;
-  }
-  /* End Of header   ---------------------------------------------------------------------------------------------------------------------------------*/
-  .home-1 {
-    padding: 30px;
-    letter-spacing: 3px;
-    color: #eee;
-    text-shadow: 3px 3px 20px #222,-3px -3px 20px #222;
-  }
-  .home-2 a {
-    padding: 20px 0px;
-  }
-  .home-2 img {
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
-    padding: 10px;
-  }
-  .description,
-  .technical {
-    height: 250px;
-  }
-  .description div {
-    padding: 4vw 4vw;
-  }
-  .description p {
-    font-size: calc(13px + 0.8vw);
-    text-align: justify;
-  }
-  /* .slider-description {
-    height: 200px;
-  }
-  .slider-description p {
-    font-size: calc(10px + 1vw);
-  } */
-  .contact-list a {
-    font-size: 28px;
-  }
-  .email-div {
-    width: 70%;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 991px) {
-  .mobile-menu {
-    width: 100%;
-    z-index: 9;
-  }
-  .navigation {
-    width: 100%;
-    height: 100vh;
-    background-color: #062f6a;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scale(0);
-    transform-origin: top left;
-    overflow: auto;
-  }
-  .navigation li {
-    width: 100%;
-    margin: 10px 0px;
-    text-align: center;
-  }
-  .navigation a {
-    color: #aaa;
-    transition: all 300ms linear;
-  }
-  .navigation a:hover {
-    color: #fff;
-  }
-  .EN {
-    line-height: 60px;
-    color: #555;
-    cursor: pointer;
-  }
-  .shownav {
-    transform: scale(1);
-    padding-top: 70px;
-  }
-  .hide {
-    display: none;
-  }
-  .icon-2 {
-    color: #aaa !important;
-  }
-  .icon-2:hover {
-    color: #fff !important;
-  }
-  .mobile-2 {
-    background-color: #062f6a;
-    transition: all 500ms ease-in 1s;
-  }
-  /* End Of header   ---------------------------------------------------------------------------------------------------------------------------------*/
-  .home-1 {
-    padding: 30px;
-    letter-spacing: 3px;
-    color: #eee;
-    text-shadow: 3px 3px 20px #222,-3px -3px 20px #222;
-  }
-  .home-2 a {
-    padding: 20px 0px;
-  }
-  .home-2 img {
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
-    padding: 10px;
-  }
-  .description,
-  .technical {
-    height: 270px;
-  }
-  .description div {
-    padding: 2vw 4vw;
-  }
-  .description p {
-    font-size: calc(11px + 0.8vw);
-    text-align: justify;
-  }
-  /* .slider-description {
-    height: 180px;
-  } */
-  /* .slider-description p {
-    font-size: calc(10px + 0.9vw);
-  } */
-  .contact-list a {
-    font-size: 28px;
-  }
-  .email-div {
-    width: 50%;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .navigation {
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+  .header {
     height: 60px;
   }
+
   .navigation li {
     height: 100%;
   }
+
   .navigation a {
+    line-height: 60px;
     color: #444;
     display: block;
     height: 100%;
     line-height: 60px;
   }
+
   .navigation a::after {
     display: block;
     margin: auto;
@@ -298,50 +125,255 @@
     transform-origin: left;
     transition: all 300ms ease;
   }
+
   .navigation a:hover::after {
     transform: scaleX(1);
   }
+
   .navigation a:hover {
     color: #222;
   }
-  .hide {
-    display: none;
+
+
+
+
+  /* End Of header   ---------------------------------------------------------------------------------------------------------------------------------*/
+  .home {
+    margin-top: 60px;
+    height: 200px;
   }
-  /* End Of header  ---------------------------------------------------------------------------------------------------------------------------*/
+
   .home-1 {
-    padding: 0px 30px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #eee;
-    text-shadow: 3px 3px 20px #222,-3px -3px 20px #222;
+    text-shadow: 3px 3px 20px #222, -3px -3px 20px #222;
   }
-  .home-2 a {
-    padding: 100px 0px;
+
+  .home-1 h1 {
+    font-size: 20px;
   }
+  .home-1 h2 {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+
   .home-2 img {
-    border-radius: 10px;
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    margin-top: 90px;
+    margin-right: 32px;
     box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
-    padding: 10px;
   }
+
+  .description,
+  .technical {
+    height: 250px;
+  }
+
+  .description div {
+    padding: 4vw 4vw;
+  }
+
+  .description p {
+    font-size: calc(13px + 0.8vw);
+    text-align: justify;
+  }
+
+  .contact-list a {
+    font-size: 28px;
+  }
+
+  .email-div {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    height: 60px;
+  }
+
+  .navigation li {
+    height: 100%;
+  }
+
+  .navigation a {
+    line-height: 60px;
+    color: #444;
+    display: block;
+    height: 100%;
+    line-height: 60px;
+  }
+
+  .navigation a::after {
+    display: block;
+    margin: auto;
+    content: "";
+    height: 2px;
+    background-color: #222;
+    margin-top: -10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 300ms ease;
+  }
+
+  .navigation a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navigation a:hover {
+    color: #222;
+  }
+
+  /* End Of header   ---------------------------------------------------------------------------------------------------------------------------------*/
+  .home {
+    margin-top: 60px;
+    height: 200px;
+  }
+
+  .home-1 {
+    letter-spacing: 2px;
+    color: #eee;
+    text-shadow: 3px 3px 20px #222, -3px -3px 20px #222;
+  }
+
+   .home-1 h1 {
+    font-size: 22px;
+  }
+  .home-1 h2 {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+
+  .home-2 img {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    margin-top: 90px;
+    margin-right: 32px;
+    box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
+  }
+
+  .description,
+  .technical {
+    height: 270px;
+  }
+
+  .description div {
+    padding: 2vw 4vw;
+  }
+
+  .description p {
+    font-size: calc(11px + 0.8vw);
+    text-align: justify;
+  }
+
+  .contact-list a {
+    font-size: 28px;
+  }
+
+  .email-div {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .header {
+    height: 60px;
+  }
+
+  .navigation li {
+    height: 100%;
+  }
+
+  .navigation a {
+    line-height: 60px;
+    color: #444;
+    display: block;
+    height: 100%;
+    line-height: 60px;
+  }
+
+  .navigation a::after {
+    display: block;
+    margin: auto;
+    content: "";
+    height: 2px;
+    background-color: #222;
+    margin-top: -10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 300ms ease;
+  }
+
+  .navigation a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navigation a:hover {
+    color: #222;
+  }
+
+  /* End Of header  ---------------------------------------------------------------------------------------------------------------------------*/
+  .home {
+    margin-top: 60px;
+    height: 200px;
+  }
+
+  .home-1 {
+    letter-spacing: 2px;
+    color: #eee;
+    text-shadow: 3px 3px 20px #222, -3px -3px 20px #222;
+  }
+
+  .home-1 h1 {
+    font-size: 24px;
+  }
+  .home-1 h2 {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+
+  .home-2 img {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    margin-top: 90px;
+    margin-right: 32px;
+    box-shadow: 2px 2px 20px #222, -2px -2px 20px #222;
+  }
+
   .description,
   .technical {
     height: 260px;
   }
+
   .description div {
     padding: 1vw 2vw;
   }
+
   .description p {
     font-size: 19px;
     text-align: justify;
   }
-  /* .slider-description {
-    height: 200px;
-  } */
-  /* .slider-description p {
-    font-size: 17px;
-  } */
+
   .contact-list a {
     font-size: 28px;
   }
+
   .email-div {
     width: 40%;
   }
@@ -349,7 +381,6 @@
 
 .header {
   width: 100%;
-  height: 60px;
   position: fixed;
   top: 0;
   color: #fff;
@@ -361,69 +392,18 @@
 }
 
 .nav {
-  width: calc(100% - 32px);
   max-width: 1200px;
-  border-bottom: 1px solid #bbb;
-  background-color: white;
 }
 
 .navigation a {
   text-decoration: none;
   font-weight: bold;
   display: block;
-  line-height: 60px;
-}
-
-.lang {
-  line-height: 60px;
-  color: #555;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.lang > div {
-  background-color: #fff;
-  position: absolute;
-  line-height: 30px;
-  border: 1px solid #999;
-}
-
-.lang > div a {
-  text-decoration: none;
-  padding: 5px 40px;
-  color: #444;
-}
-
-.fa-mobile {
-  background-color: #fff;
-  position: absolute;
-  right: 20px;
-  line-height: 30px;
-  border: 1px solid #999;
-}
-
-.fa-mobile a {
-  display: block;
-  text-decoration: none;
-  padding: 10px 20px;
-  color: #444;
-}
-
-.logo {
-  padding-top: 10px;
-  z-index: 5;
-}
-
-.logo span {
-  background-color: #1b9aaf;
-  transition: all 300ms linear;
-  border-radius: 10px;
 }
 
 .icon {
-  line-height: 60px;
-  font-size: 40px;
+  line-height: 40px;
+  font-size: 35px;
   color: #555;
   font-weight: bold;
   z-index: 6;
@@ -433,21 +413,24 @@
 
 /* End Of header  ---------------------------------------------------------------------------------------------------------------------------------*/
 .home {
-  max-width: 1200px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 60px;
+ 
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/back.jpg");
   background-size: cover;
 }
 
+.home-1 a {
+  width: 88px;
+}
+
+
+
 .button {
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: bold;
-  color: #fff;
+  color: #fefefe;
   border: 2px solid #081335;
-  background-image: linear-gradient(to right, #081335 50%, transparent 50%);
+  background-image: linear-gradient(to right, #518f00 50%, #6dc001 50%);
   background-size: 300% 100%;
   background-position: 100%;
   transition: all 500ms linear;
@@ -458,7 +441,9 @@
   background-position: 0%;
   box-shadow: 2px 2px 15px #999, -2px -2px 15px #999;
 }
-
+.home-wrapper {
+  max-width: 1000px;
+}
 .simple-row {
   padding-top: 100px;
   padding-bottom: 40px;
@@ -472,7 +457,7 @@
   width: calc(100% - 32px);
 }
 
-.technical > div {
+.technical>div {
   height: 100%;
   border: 2px solid #444;
   border-radius: 3px;
@@ -482,7 +467,7 @@
   cursor: pointer;
 }
 
-.technical > div:hover {
+.technical>div:hover {
   opacity: 0.9;
 }
 
@@ -513,10 +498,6 @@
   opacity: 0.7;
 }
 
-/* .slider-description {
-  border: 1px solid #444;
-  text-align: justify;
-} */
 
 .slider-control-items {
   list-style-type: none;
@@ -532,10 +513,10 @@
   max-width: 1200px;
 }
 
-.skills > div > h2::after,
-.services > div > h2::after,
-.projects > div > h2::after,
-.about-me > div > h2::after {
+.skills>div>h2::after,
+.services>div>h2::after,
+.projects>div>h2::after,
+.about-me>div>h2::after {
   display: block;
   content: "";
   margin-top: 2px;
@@ -651,6 +632,7 @@
   width: 100px;
   height: 100px;
 }
+
 .react-tailwind :last-child {
   background: url("../images/Tailwind_CSS_Logo.png");
   background-size: contain;
@@ -659,6 +641,7 @@
   width: 100px;
   height: 100px;
 }
+
 .uiux :first-child {
   background: url("../images/figma-logo.png");
   background-size: contain;
@@ -666,6 +649,7 @@
   width: 100px;
   height: 100px;
 }
+
 .uiux :last-child {
   background: url("../images/ux.jpg");
   background-size: contain;
@@ -682,6 +666,7 @@
   width: 100px;
   height: 100px;
 }
+
 .wp-woo :last-child {
   background: url("../images/WooCommerce_logo.png");
   background-size: contain;
@@ -690,6 +675,7 @@
   width: 100px;
   height: 100px;
 }
+
 .seo :first-child {
   background: url("../images/seo.webp");
   background-size: contain;
@@ -698,6 +684,7 @@
   width: 150px;
   height: 100px;
 }
+
 .seo :last-child {
   background: url("../images/Digital_Marketing_logo.png");
   background-size: contain;
