@@ -118,7 +118,7 @@ setInterval(function(){
         counter=0;
         i=0;
      }
-},5000);
+},3000);
 
 /* end of slider */
 
@@ -173,24 +173,3 @@ document.addEventListener(("scroll"),function(){
 });
 
 /* --------------------------------------------------------------------------------*/
-
-const emailDiv=document.querySelector(".email-div-container");
-const emailBtn=document.querySelector(".email");
-const emailClose = document.querySelector(".email-close");
-const contactMe = document.querySelector(".contact-me");
-
-emailBtn.addEventListener("click",function(){
-    emailDiv.classList.add("show-email");
-});
-contactMe.addEventListener("click",function(){
-    emailDiv.classList.add("show-email");
-});
-emailClose.addEventListener("click",function(){
-    emailDiv.classList.remove("show-email");
-});
-window.addEventListener("click",function(x){
-    if (x.target == emailDiv) {
-        emailDiv.classList.remove("show-email");
-    }
-});
-
